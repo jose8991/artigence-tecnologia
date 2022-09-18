@@ -1,6 +1,7 @@
 <template>
     <footer>
         <div class="container__footer">
+            <!-- muestra el logo y me dice el slogan de la pagina -->
             <div class="box__footer">
                 <div class="logo">
                     <img src="@/assets/Images/logo-magtimus.png" alt="">
@@ -9,14 +10,15 @@
                     <p>prueba</p>
                 </div>
             </div>
+            <!-- me trae la lista de las opciones que tiene el footer -->
             <listaFooter/>
         </div>
+        <!-- copiamos los derechos de autor -->
         <div class="box_copyright">
             <hr>
             <p> todos los derechos reservados © 2022 <b>propio</b></p>
         </div>
     </footer>
-
 </template>
 
 <script setup>
@@ -30,7 +32,7 @@ footer{
     padding: 50px 0px;
     *background-image: url('@/assets/Images/background-footer.svg');
     *background-size: cover;
-    background-color: #d0f0f8;
+    background-color: #04046e;
     -webkit-mask-image: url('@/assets/Images/background-footer.svg');
     mask-image: url('@/assets/Images/background-footer.svg');
     -webkit-mask-size:  cover;
@@ -52,13 +54,6 @@ footer{
 .box__footer .logo img{
     width: 180px;
 }
-.box__footer .terms{
-    max-width: 350px;
-    margin-top: 20px;
-    font-weight: 500;
-    color: #7a7a7a;
-    font-size: 18px;
-}
 
 .box_copyright{
     max-width: 1200px;
@@ -68,20 +63,20 @@ footer{
 
 .box_copyright p{
     margin-top: 20px;
-    color: #7a7a7a;
+    color: #59A642;
 }
 
 .box_copyright hr{
     border:none;
     height: 1px;
-    background-color: #7a7a7a;;
+    background-color: #59A642;;
 }
 
 .box__footer .terms{
 max-width: 350px;
 margin-top: 20px;
 font-weight: 500;
-color: #7a7a7a;
+color: #59A642;
 font-size: 18px;
 }
 

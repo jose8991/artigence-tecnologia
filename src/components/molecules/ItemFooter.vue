@@ -19,13 +19,13 @@ defineProps({
 
 .box__footer h2{
     margin-bottom: 30px;
-    color: #343434;
+    color: #95F279;
     font-weight: 700;
 }
 
 .box__footer a{
     margin-top:10px;
-    color: #7a7a7a;
+    color: #59A642;
     font-weight: 600;
 }
 
