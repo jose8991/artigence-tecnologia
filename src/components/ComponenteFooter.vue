@@ -6,7 +6,7 @@
                     <img src="@/assets/Images/logo-magtimus.png" alt="">
                 </div>
                 <div class="terms">
-                    <p>loren djfskkkkkkkkkkkkkkkkkkkkkkkklkjszs   AKJAKJJKAKJAAKJ</p>
+                    <p>prueba</p>
                 </div>
             </div>
             <listaFooter/>
