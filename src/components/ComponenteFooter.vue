@@ -13,7 +13,7 @@
         </div>
         <div class="box_copyright">
             <hr>
-            <p> todos los derechos reservados © 2022 <b>ia</b></p>
+            <p> todos los derechos reservados © 2022 <b>propio</b></p>
         </div>
     </footer>
 
