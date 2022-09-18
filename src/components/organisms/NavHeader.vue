@@ -37,9 +37,10 @@ nav ul li a {
     font-size: 14px;
 }
 
-.nav_mod {
+.nav_mod{
     height: 70px;
     box-shadow: 1px 1px 10px 0px #00000010;
-    background-color: white;
+    background: white;
 }
+
 </style>

@@ -6,7 +6,7 @@
 
 <script>
 // @ is an alias to /src
-import HeaderFinal from '@/components/ComponentePruebas.vue'
+import HeaderFinal from '@/components/ComponenteHeader.vue'
 import PortadaPrincipal from '@/components/ComponentePortada.vue'
 import FooterPrincipal from '@/components/ComponenteFooter.vue'
 
