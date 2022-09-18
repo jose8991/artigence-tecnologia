@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-   import listaFooter from '@/components/organisms/OpcionesFooter.vue'
+import listaFooter from '@/components/organisms/OpcionesFooter.vue'
 </script>
 
 <style scoped>
