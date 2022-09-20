@@ -9,9 +9,9 @@
                 <div class="container__info">
                     <h1>BIENVENIDOS</h1>
                     <h2>SMARTGATES</h2>
-                    <p>
+                    <h3>
                         La inteligencia artificial a tu servicio para un mejor futuro.
-                    </p>
+                    </h3>
                     <BotonGeneral title="prueba" />
                 </div>
                 <div class="container__vector">
@@ -32,7 +32,9 @@ import BotonGeneral from '@/components/atoms/BotonHeader.vue';
     padding-bottom: 60px;
     margin-top: 100px;
 }
-
+h3{
+    padding: 20px 0px;
+}
 .container__cover {
     max-width: 1200px;
     margin: auto;

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import VistaPrincipal from '../views/VistaPrincipal.vue'
+import ServicioPublicacion from '../views/ServicioPublicaciones.vue'
 
 const routes = [
   {
@@ -7,6 +8,11 @@ const routes = [
     name: 'home',
     component: VistaPrincipal
   },
+  {
+    path: '/publicaciones',
+    name: 'publicaciones',
+    component: ServicioPublicacion
+  }
 ]
 
 const router = createRouter({

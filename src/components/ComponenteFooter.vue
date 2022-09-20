@@ -4,7 +4,7 @@
             <!-- muestra el logo y me dice el slogan de la pagina -->
             <div class="box__footer">
                 <div class="logo">
-                    <img src="@/assets/Images/logo-magtimus.png" alt="">
+                    <img src="@/assets/Images/smartgates.png" alt="">
                 </div>
                 <div class="terms">
                     <p>prueba</p>

@@ -2,7 +2,7 @@
     <header id="header">
         <div class="container__header">
             <div class="logo">
-                <img src="@/assets/Images/logo-magtimus.png" alt="">
+                <img src="@/assets/Images/smartgates.png" alt="">
             </div>
             <NavPrueba/>
         </div>
