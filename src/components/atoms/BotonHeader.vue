@@ -1,17 +1,19 @@
 <template>
-    <li><a class="selected" href="#">Inicio</a></li>
+    <li><a class="selected" :href="link">{{title}}</a></li>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import { defineProps } from 'vue';
+defineProps({
+    title: String,
+    link: String
+})
 </script>
 
 <style scoped>
 .selected{
     background: #FEBA0B;
-    padding: 10px 30px;
+    padding: 7px 20px;
     color: #59A642;
     font-size: 18px;
     font-weight: 600;

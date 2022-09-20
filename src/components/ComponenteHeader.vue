@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import NavPrueba from "@/components/organisms/Header/NavHeader.vue";
+import NavPrueba from "@/components/organisms/NavHeader.vue";
 </script>
 
 <style  scoped>
