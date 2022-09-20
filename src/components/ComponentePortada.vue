@@ -8,9 +8,9 @@
             <div class="container__cover">
                 <div class="container__info">
                     <h1>BIENVENIDOS</h1>
-                    <h2>BUSINESS</h2>
+                    <h2>SMARTGATES</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                        La inteligencia artificial a tu servicio para un mejor futuro.
                     </p>
                     <BotonGeneral title="prueba" />
                 </div>
