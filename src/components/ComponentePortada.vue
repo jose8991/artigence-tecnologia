@@ -1,6 +1,10 @@
 <template>
     <div class="container__all">
         <div class="cover">
+            <!-- inicio -->
+            <div class="bg_color"></div>>  
+            <!-- final -->
+
             <div class="container__cover">
                 <div class="container__info">
                     <h1>BIENVENIDOS</h1>
@@ -19,7 +23,7 @@
 </template>
 
 <script setup>
-import BotonGeneral from '@/components/atoms/BotonGeneral.vue';
+import BotonGeneral from '@/components/atoms/BotonHeader.vue';
 </script>
 
 <style scoped>

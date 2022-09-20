@@ -1,6 +1,7 @@
 <template>
     <HeaderFinal/>
     <PortadaPrincipal/>
+    <CardPrincipal/>
     <FooterPrincipal/>
 </template>
 
@@ -9,12 +10,14 @@
 import HeaderFinal from '@/components/ComponenteHeader.vue'
 import PortadaPrincipal from '@/components/ComponentePortada.vue'
 import FooterPrincipal from '@/components/ComponenteFooter.vue'
+import CardPrincipal from '@/components/CardsService.vue'
 
 export default {
   components: {
     FooterPrincipal,
     PortadaPrincipal,
     HeaderFinal,
+    CardPrincipal
   }
 }
 </script>

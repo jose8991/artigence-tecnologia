@@ -1,0 +1,20 @@
+[
+    {
+        "icono":"fab fa-css3",
+        "descripcion":"El uso de la inteligencia artificial en las publicaciones de redes sociales tiene muchas ventajas. La inteligencia artificial puede ayudar a los usuarios de redes sociales a encontrar contenido relevante y de mayor calidad.La inteligencia artificial también puede ayudar a las empresas a mejorar la calidad de sus publicaciones de redes sociales y a aumentar el alcance de sus mensajes",
+        "titulo":"ir al servicio",
+        "link":"http://localhost:8080/publicaciones"
+    },
+    {
+        "icono":"fab fa-js-square",
+        "descripcion":"El uso de la inteligencia artificial en las publicaciones de redes sociales tiene muchas ventajas. La inteligencia artificial puede ayudar a los usuarios de redes sociales a encontrar contenido relevante y de mayor calidad.La inteligencia artificial también puede ayudar a las empresas a mejorar la calidad de sus publicaciones de redes sociales y a aumentar el alcance de sus mensajes",
+        "titulo":"ir al servicio",
+        "link":"http://localhost:8080/publicaciones"
+    },
+    {
+        "icono":"fab fa-html5",
+        "descripcion":"El uso de la inteligencia artificial en las publicaciones de redes sociales tiene muchas ventajas. La inteligencia artificial puede ayudar a los usuarios de redes sociales a encontrar contenido relevante y de mayor calidad.La inteligencia artificial también puede ayudar a las empresas a mejorar la calidad de sus publicaciones de redes sociales y a aumentar el alcance de sus mensajes",
+        "titulo":"ir al servicio",
+        "link":"http://localhost:8080/publicaciones"
+    }
+]
