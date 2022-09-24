@@ -4,7 +4,7 @@
     consultar
   </button>
   <div v-if="loading">
-    <TransitionService/>
+    <TransitionService />
     <h1>cargandoooooo</h1>
   </div>
 
@@ -24,15 +24,14 @@ export default {
       loading: false,
     };
   },
-  
-  components:{
-    TransitionService:TransitionPrincipal
+
+  components: {
+    TransitionService: TransitionPrincipal,
   },
   methods: {
-
     // Pushes posts to the server when called.
     postPost() {
-	 console.log("entro a la funcion")
+      console.log("entro a la funcion");
 
       this.loading = true;
       let post = {
@@ -44,12 +43,10 @@ export default {
         .then((response) => {
           this.resultado = response.data.respuesta;
           this.loading = false;
-     
         })
         .catch((e) => {
           this.errors.push(e);
         });
-
     },
   },
 };
@@ -60,7 +57,7 @@ export default {
   height: 1200px;
   background-color: #f5f5f5;
 }
-h1{
+h1 {
   color: red;
 }
 </style>
