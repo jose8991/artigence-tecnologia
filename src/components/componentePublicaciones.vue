@@ -19,7 +19,7 @@ import TransitionPrincipal from "@/components/TransitionService.vue";
 export default {
   data() {
     return {
-      texto: "clase de programacion en la noche con cafe",
+      texto: "clase de programacion",
       resultado: null,
       loading: false,
     };
