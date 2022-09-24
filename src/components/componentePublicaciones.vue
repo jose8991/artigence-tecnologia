@@ -29,15 +29,18 @@ export default {
     TransitionService:TransitionPrincipal
   },
   methods: {
+
     // Pushes posts to the server when called.
     postPost() {
+	 console.log("entro a la funcion")
+
       this.loading = true;
       let post = {
         tipo: "publicacion",
         contenido: this.texto,
       };
       axios
-        .post(`http://54.89.189.93/`, post)
+        .post(`https://in.markingall.com/`, post)
         .then((response) => {
           this.resultado = response.data.respuesta;
           this.loading = false;
