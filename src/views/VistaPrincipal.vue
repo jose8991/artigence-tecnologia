@@ -1,23 +1,18 @@
 <template>
-    <HeaderFinal/>
+    <!-- <HeaderFinal/>
     <PortadaPrincipal/>
     <CardPrincipal/>
-    <FooterPrincipal/>
+    <FooterPrincipal/> -->
+
+    <PaginaPrincipal/>
 </template>
 
-<script>
+<script setup>
 // @ is an alias to /src
-import HeaderFinal from '@/components/ComponenteHeader.vue'
-import PortadaPrincipal from '@/components/ComponentePortada.vue'
-import FooterPrincipal from '@/components/ComponenteFooter.vue'
-import CardPrincipal from '@/components/CardsService.vue'
+// import HeaderFinal from '@/components/FooterPrueba.vue'
+// import PortadaPrincipal from '@/components/ComponentePortada.vue'
+// import FooterPrincipal from '@/components/ComponenteFooter.vue'
+// import CardPrincipal from '@/components/CardsService.vue'
+import PaginaPrincipal from '@/components/PaginaPrincipal.vue';
 
-export default {
-  components: {
-    FooterPrincipal,
-    PortadaPrincipal,
-    HeaderFinal,
-    CardPrincipal
-  }
-}
 </script>

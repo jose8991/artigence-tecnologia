@@ -12,9 +12,9 @@ defineProps({
 
 <style scoped>
 .selected{
-    background: #FEBA0B;
+    background: var(--gradient);
     padding: 7px 20px;
-    color: #59A642;
+    color: var(--main-text-color);
     font-size: 18px;
     font-weight: 600;
     border: none;
