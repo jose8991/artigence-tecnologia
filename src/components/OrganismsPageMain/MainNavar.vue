@@ -45,20 +45,13 @@
 
         
       </ul>
-      <!-- <div>
-        <i style="font-size: 47px" class="fa-regular fa-circle-user"></i>
-      </div> -->
+
       <BotonPrincipal title="registrarse" link="/registrarse"/>
     </nav>
 </template>
 
-<script>
+<script setup>
   import BotonPrincipal from "@/components/atoms/BotonHeader.vue";
-    export default {
-        components:{
-          BotonPrincipal
-        }
-    }
 </script>
 
 <style  scoped>
@@ -123,7 +116,7 @@
   /* color el cual abre el ul */
   .ul-desplegable-vertical ul {
     /* este es el submenu */
-    background-color: #3843D0;
+    background-color: var(--blue-intro);
     border-radius: 0px 0px 10px 10px;
     overflow: hidden;
   }
@@ -212,7 +205,7 @@
       display: block !important;
       width: 40%;
       height: calc(100vh - var(--height));
-      background: #3843D0;
+      background: var(--blue-intro);
       top: 70px;
       left: -100%;
       text-align: center;
@@ -242,7 +235,7 @@
   }
 
   .underline-sub-menu {
-    border-bottom: 4px solid #2F39C6;
+    border-bottom: 4px solid var(--blue-gradient);
   }
 
   li:hover label>.underline {
