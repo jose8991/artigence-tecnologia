@@ -32,7 +32,7 @@ footer{
     padding: 50px 0px;
     *background-image: url('@/assets/Images/background-footer.svg');
     *background-size: cover;
-    background-color: #04046e;
+    background-color: var(--blue-footer);
     -webkit-mask-image: url('@/assets/Images/background-footer.svg');
     mask-image: url('@/assets/Images/background-footer.svg');
     -webkit-mask-size:  cover;

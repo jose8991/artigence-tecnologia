@@ -1,7 +1,7 @@
 <template>
   <body>
     <MainNavar/>
-    <MainHeader/>
+    <!-- <MainHeader/> -->
     <main class="main">
       <ServicesCard/>
       <AbautCards/>
@@ -15,7 +15,7 @@
 
 <script setup>
 import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
-import MainHeader from "@/components/OrganismsPageMain/MainHeader.vue";
+// import MainHeader from "@/components/OrganismsPageMain/MainHeader.vue";
 import ServicesCard from "@/components/OrganismsPageMain/ServicesCard.vue";
 import AbautCards from "@/components/OrganismsPageMain/AbautCards.vue";
 import MainService from "@/components/OrganismsPageMain/MainService.vue";
