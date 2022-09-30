@@ -37,13 +37,14 @@
           <hr />
           <div class="footer__service__card">
             <h3 class="user__name">zzzzzzzzzzzzz</h3>
-            <i>08 marzo</i>
+            <MainButton title="ver más" link="/servicios" />
           </div>
         </div>
       </div>
 </template>
 
-<script>
+<script setup>
+import MainButton from "@/components/atoms/MainButton.vue";
 
 </script>
 

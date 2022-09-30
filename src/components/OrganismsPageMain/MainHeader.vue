@@ -4,13 +4,17 @@
 
       <section class="hero__main container">
          <img
-          src="@/assets/images_new_project/illustration-intro.png"
+          src="@/assets/images_new_project/imageHEader.svg"
           class="hero__img"
         />
 
-        <h1 class="hero__title">title eeeeeee eeeeeeeeeeeeeee eeeeeeeeeeee</h1>
+        <h1 class="hero__title">Algoritmos inteligentes para analizar y comprender mejor el texto.</h1>
+        <!-- <h1 class="hero__title">Generar texto de forma más eficiente y efectiva.</h1>
+        <h1 class="hero__title">Analizar y comprender mejor el texto.</h1>
+        <h1 class="hero__title">La inteligencia artificial está cambiando la forma en que generamos texto </h1> -->
          <p class="hero__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad, iste provident porro et corporis id aliquid aut libero, praesentium quam commodi. Ratione voluptatem voluptatum doloribus. Error adipisci distinctio beatae.
+          
+La inteligencia artificial está cambiando la forma en que procesamos el texto. Ahora, podemos usar algoritmos para analizar y comprender mejor el texto. Esto te permite generar texto de forma más eficiente y efectiva.
         </p>
         <!-- <a href="#" class="hero__cta"> enviar </a>  -->
       </section>

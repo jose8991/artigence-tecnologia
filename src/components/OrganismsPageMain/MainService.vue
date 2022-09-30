@@ -1,10 +1,11 @@
 <template>
       <section class="productive container">
         <figure class="productive__picture">
-          <img
-            src="@/assets/images_new_project/inteligence.jpg"
+          <lottie-player src="https://lottie.host/32827abf-03db-40b4-8cc0-c22276aeb0d7/IVDjFNwyad.json" background="transparent" speed="1"  loop autoplay class="productive__img"></lottie-player>
+          <!-- <img
+            src="@/assets/images_new_project/illustration-stay-productive.png"
             class="productive__img"
-          />
+          /> -->
         </figure>
 
         <div class="productive__texts">
@@ -52,7 +53,8 @@ export default {
 
 .productive__img {
   display: block;
-  width: 100%;
+  width: 90%;
+  height: 90%;
   margin: 0 auto;
   max-width: 600px;
 }
