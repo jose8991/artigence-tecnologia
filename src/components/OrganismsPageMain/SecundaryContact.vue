@@ -28,6 +28,10 @@
     padding: 60px 0;
     margin:0px auto;
     text-align: center;
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .join__container {
@@ -36,6 +40,7 @@
     padding-left: 1.5em;
     padding-right: 1.5em;
     text-align: center;
+    justify-content: center;
 }
 
 .join__title {

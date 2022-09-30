@@ -3,25 +3,22 @@
       <div class="hero__wave"></div>
 
       <section class="hero__main container">
-        <img
+         <img
           src="@/assets/images_new_project/illustration-intro.png"
           class="hero__img"
         />
 
-        <h1 class="hero__title">title eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</h1>
-        <p class="hero__paragraph">
-          lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
-          lllllllllllllllll.
+        <h1 class="hero__title">title eeeeeee eeeeeeeeeeeeeee eeeeeeeeeeee</h1>
+         <p class="hero__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad, iste provident porro et corporis id aliquid aut libero, praesentium quam commodi. Ratione voluptatem voluptatum doloribus. Error adipisci distinctio beatae.
         </p>
-        <a href="#" class="hero__cta"> enviar </a>
+        <!-- <a href="#" class="hero__cta"> enviar </a>  -->
       </section>
     </header>
 </template>
 
-<script>
-    export default {
-        
-    }
+<script setup>
+      
 </script>
 
 <style  scoped>
@@ -44,9 +41,12 @@
   -webkit-animation: move_vector 6s ease-in-out infinite;
 }
 .hero__title {
-  margin-top: 1.5em;
-  color: var(--gradient);
+  width: 100%;
+  word-wrap: break-word;
+  /* position:absolute; */
+  color: red;
   font-family: var(--heading-font);
+
 }
 
 .hero__paragraph {
@@ -118,11 +118,14 @@
 
 
 @media (min-width: 740px) {
-    .hero__title {
+  .hero__title {
     font-size: 2.5rem;
   }
   .hero__wave::before {
     background-image: url("@/assets/images_new_project/bg-curvy-desktop.svg");
+  }
+  .hero__img{
+    object-fit: contain;
   }
 }
 </style>
