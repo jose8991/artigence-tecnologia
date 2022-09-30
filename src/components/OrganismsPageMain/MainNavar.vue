@@ -52,6 +52,9 @@
 
 <script setup>
   import BotonPrincipal from "@/components/atoms/BotonHeader.vue";
+  import DatosHeader from "@/data/lista-header.json";
+  const opciones = DatosHeader;
+  
 </script>
 
 <style  scoped>

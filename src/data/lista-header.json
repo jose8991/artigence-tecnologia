@@ -1,14 +1,36 @@
 [
-    {
-        "titulo":"servicios",
-        "url":"http://localhost:8080/servicios"
-    },
-    {
-        "titulo":"contacto",
-        "url":"http://localhost:8080/contacto"
-    },
-    {
-        "titulo":"nosotros",
-        "url":"http://localhost:8080/nosotros"
-    }
+  {
+    "titulo": "servicios",
+    "opciones": [
+      {
+        "service": "publicaciones",
+        "url": "/publicaciones"
+      },
+      {
+        "service": "historia",
+        "url": "/historia"
+      },
+      {
+        "service": "palabras claves",
+        "url": "/palabras-claves"
+      }
+    ]
+  },
+  {
+    "titulo": "nosotros",
+    "opciones": [
+      {
+        "service": "ubicacion",
+        "url": "/servicios"
+      },
+      {
+        "service": "mision y vision",
+        "url": "/historia"
+      },
+      {
+        "service": "palabras claves",
+        "url": "/palabras-claves"
+      }
+    ]
+  }
 ]

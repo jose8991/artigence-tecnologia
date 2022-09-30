@@ -1,28 +1,29 @@
 <template>
-    <input type="button" :value="title">
+    <router-link class="selected" :to="link">{{title}}</router-link>
 </template>
 
 <script setup>
 import { defineProps } from 'vue';
 defineProps({
     title: String,
+    link: String
 })
 </script>
 
 <style scoped>
-input[type="button"]{
-    background: #FEBA0B;
-    padding: 10px 30px;
-    color: #59A642;
+.selected{
+    background: var(--gradient);
+    padding: 7px 20px;
+    color: var(--main-text-color);
     font-size: 18px;
     font-weight: 600;
     border: none;
     border-radius: 20px;
-    box-shadow: 1px 1px 30px -5px #20202049;
+    box-shadow: 1px 1px -5px #20202049;
     cursor: pointer;
     transition: box-shadow 500ms;
 }
-input[type="button"]:hover{
-    box-shadow: 1px 1px 30px -5px #20202089;
+.selected:hover{
+    box-shadow: 1px 1px -5px #20202089;
 }
 </style>

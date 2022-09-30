@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
+import MainNavar from "@/components/OrganismsPageMain/pppNavar.vue";
 import MainHeader from "@/components/OrganismsPageMain/MainHeader.vue";
 import ServicesCard from "@/components/OrganismsPageMain/ServicesCard.vue";
 import AbautCards from "@/components/OrganismsPageMain/AbautCards.vue";
