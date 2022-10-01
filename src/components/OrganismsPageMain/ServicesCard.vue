@@ -1,7 +1,7 @@
 <template>
-       <div class="services__cards">
-        <div class="service__card">
-          <div class="cover__service__card">
+       <div class="services__cards" v-for="service in servicedata" :key="service">
+         <!-- <div class="service__card">
+         <div class="cover__service__card">
             <img
               src="@/assets/images_new_project/pngegg.png"
               alt="no cargo imagen de cards"
@@ -27,17 +27,17 @@
             <h3 class="user__name">zzzzzzzzzzzzz</h3>
             <i>08 marzo</i>
           </div>
-        </div>
+        </div> -->
         <div class="service__card">
           <div class="cover__service__card">
-            <img src="@/assets/images_new_project/pngegg.png" alt="" />
+            <img :src="service.img" alt="" />
           </div>
-          <h2 class="service__title">servicio de publicaciones</h2>
-          <p>lllllllllllllllllllllllllllllll</p>
+          <h2 class="service__title">{{service.service}}</h2>
+          <p>{{service.paragraph}}</p>
           <hr />
           <div class="footer__service__card">
-            <h3 class="user__name">zzzzzzzzzzzzz</h3>
-            <MainButton title="ver más" link="/servicios" />
+            <h3 class="user__name">{{service.secondaryDegree}}</h3>
+            <MainButton title="ir" :link="service.linkService" />
           </div>
         </div>
       </div>
@@ -45,6 +45,8 @@
 
 <script setup>
 import MainButton from "@/components/atoms/MainButton.vue";
+import serviceData from "@/data/services.json";
+const servicedata = serviceData;
 
 </script>
 

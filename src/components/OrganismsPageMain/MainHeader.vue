@@ -1,31 +1,34 @@
 <template>
-    <header class="hero">
-      <div class="hero__wave"></div>
+  <header class="hero">
+    <div class="hero__wave"></div>
 
-      <section class="hero__main container">
-         <img
-          src="@/assets/images_new_project/imageHEader.svg"
-          class="hero__img"
-        />
+    <section class="hero__main container">
+      <lottie-player
+        src="https://assets1.lottiefiles.com/packages/lf20_8vyvisg1.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+        class="hero__img"
+      ></lottie-player>
 
-        <h1 class="hero__title">Algoritmos inteligentes para analizar y comprender mejor el texto.</h1>
-        <!-- <h1 class="hero__title">Generar texto de forma más eficiente y efectiva.</h1>
-        <h1 class="hero__title">Analizar y comprender mejor el texto.</h1>
-        <h1 class="hero__title">La inteligencia artificial está cambiando la forma en que generamos texto </h1> -->
-         <p class="hero__paragraph">
-          
-La inteligencia artificial está cambiando la forma en que procesamos el texto. Ahora, podemos usar algoritmos para analizar y comprender mejor el texto. Esto te permite generar texto de forma más eficiente y efectiva.
-        </p>
-        <!-- <a href="#" class="hero__cta"> enviar </a>  -->
-      </section>
-    </header>
+      <h1 class="hero__title">
+        Algoritmos inteligentes para analizar y comprender mejor el texto.
+      </h1>
+      <p class="hero__paragraph">
+        La inteligencia artificial está cambiando la forma en que procesamos el
+        texto. Ahora, podemos usar algoritmos para analizar y comprender mejor
+        el texto. Esto te permite generar texto de forma más eficiente y
+        efectiva.
+      </p>
+      <!-- <a href="#" class="hero__cta"> enviar </a>  -->
+    </section>
+  </header>
 </template>
 
-<script setup>
-      
-</script>
+<script setup></script>
 
-<style  scoped>
+<style scoped>
 .hero__main {
   color: #fff;
   display: grid;
@@ -34,10 +37,12 @@ La inteligencia artificial está cambiando la forma en que procesamos el texto. 
   position: relative;
 }
 .hero__img {
+  padding-top: 10px;
   position: relative;
   bottom: 10px;
   right: 0px;
-  width: 100%;
+  width: 80%;
+  height: 80%;
   display: block;
   margin: 0 auto;
   max-width: 600px;
@@ -50,7 +55,6 @@ La inteligencia artificial está cambiando la forma en que procesamos el texto. 
   /* position:absolute; */
   color: red;
   font-family: var(--heading-font);
-
 }
 
 .hero__paragraph {
@@ -120,7 +124,6 @@ La inteligencia artificial está cambiando la forma en que procesamos el texto. 
   }
 }
 
-
 @media (min-width: 740px) {
   .hero__title {
     font-size: 2.5rem;
@@ -128,7 +131,7 @@ La inteligencia artificial está cambiando la forma en que procesamos el texto. 
   .hero__wave::before {
     background-image: url("@/assets/images_new_project/bg-curvy-desktop.svg");
   }
-  .hero__img{
+  .hero__img {
     object-fit: contain;
   }
 }
