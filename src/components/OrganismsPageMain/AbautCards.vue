@@ -1,71 +1,26 @@
 <template>
   <section class="about container">
-    <article class="about__item">
+    <article class="about__item" v-for="option in options" :key="option">
       <figure class="about__picture">
         <img
-          src="@/assets/images_new_project/icon-any-file.svg"
+          :src="option.img"
           class="about__img"
         />
       </figure>
 
-      <h3 class="about__title">Aprendizaje de Calidad</h3>
+      <h3 class="about__title">{{option.title}}</h3>
 
       <p class="about__paragraph">
-        Con la ayuda de nuestros servicios realizar trabajos escolares sera mas
-        facil e innovador.
-      </p>
-    </article>
-
-    <article class="about__item">
-      <figure class="about__picture">
-        <img
-          src="@/assets/images_new_project/icon-security.svg"
-          class="about__img"
-        />
-      </figure>
-
-      <h3 class="about__title">En Cualquier Lugar</h3>
-
-      <p class="about__paragraph">
-        Acceso a nuestros servicios en cualqueir lugar que pueda acceder.
-      </p>
-    </article>
-
-    <article class="about__item">
-      <figure class="about__picture">
-        <img
-          src="@/assets/images_new_project/icon-collaboration.svg"
-          class="about__img"
-        />
-      </figure>
-
-      <h3 class="about__title">Comprometidos con el Progreso</h3>
-
-      <p class="about__paragraph">
-        La era digital en nuestra tecnologia de inteligencia artificial ayudara
-        a ser facil la vida de muchas personas.
-      </p>
-    </article>
-
-    <article class="about__item">
-      <figure class="about__picture">
-        <img
-          src="@/assets/images_new_project/icon-any-file.svg"
-          class="about__img"
-        />
-      </figure>
-
-      <h3 class="about__title">Digital</h3>
-
-      <p class="about__paragraph">
-        La facilidad de trabajo en el marketing digital es una optimizacion de
-        negocios online .
+        {{option.desc}}
       </p>
     </article>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import dataAbout from "@/data/about-services.json"
+const options=dataAbout;
+</script>
 
 <style scoped>
 .container {

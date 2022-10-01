@@ -1,0 +1,23 @@
+[
+    {
+        "img":"img/about/icon-any-file.svg",
+        "title":"aprendizaje",
+        "desc":"Con la ayuda de nuestros servicios realizar trabajos escolares sera mas facil e innovador."
+    },
+    
+    {
+        "img":"img/about/icon-security.svg",
+        "title":"En Cualquier Lugar",
+        "desc":"Acceso a nuestros servicios en cualqueir lugar que pueda acceder."
+    },
+    {
+        "img":"img/about/icon-collaboration.svg",
+        "title":"Comprometidos con el Progreso",
+        "desc":"La era digital en nuestra tecnologia de inteligencia artificial ayudara a ser facil la vida de muchas personas."
+    },
+    {
+        "img":"img/about/icon-any-file.svg",
+        "title":"Digital",
+        "desc":"La facilidad de trabajo en el marketing digital es una optimizacion de negocios online."
+    }
+]

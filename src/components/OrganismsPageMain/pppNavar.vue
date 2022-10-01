@@ -31,7 +31,7 @@
       </li>
     </ul>
 
-    <mainButton title="registrarse" link="/registrarse" class="font-size_8px-less-350px"/>
+    <mainButton title="registrarse" link="/registrarse" class="font-size_8px-less-450px"/>
   </nav>
 </template>
 

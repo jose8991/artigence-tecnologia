@@ -6,7 +6,7 @@
       <lottie-player
         src="https://assets1.lottiefiles.com/packages/lf20_8vyvisg1.json"
         background="transparent"
-        speed="5"
+        speed="0.8"
         loop
         autoplay
         class="hero__img"
