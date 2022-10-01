@@ -11,21 +11,21 @@
         alt="logo"
       />
     </a>
-    <ul class="ul-desplegable-vertical" v-for="option in options" :key="option">
-      <li class="li-desplegable-vertical">
-        <label class="label-desplegable-vertical" for="check-luis">
-          <span> {{ option.titulo }} </span>
+    <ul class="ul-desplegable-vertical" >
+      <li class="li-desplegable-vertical" v-for="option in options" :key="option">
+        <label class="label-desplegable-vertical" :for="option.titulo">
+          <span>{{ option.titulo }}</span>
           <div class="underline"></div>
         </label>
-        <input type="checkbox" :id="check-luis" />
+        <input type="checkbox" :id="option.titulo" />
         <ul class="desplegable-vertical-submenu1">
           <li v-for="subconsultas in option.opciones" :key="subconsultas">
-            <a :href="subconsultas.url" class="a-submenu-desplegable-vertical">
+            <router-link :to="subconsultas.url" class="a-submenu-desplegable-vertical">
               <label>
                 <span>{{ subconsultas.service }}</span>
                 <div class="underline-sub-menu"></div>
               </label>
-            </a>
+            </router-link>
           </li>
         </ul>
       </li>
@@ -203,7 +203,7 @@ nav {
   }
 
   .ul-desplegable-vertical ul > li {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: cyan;
   }
 }
 
@@ -237,13 +237,11 @@ li:hover label > .underline {
   position: relative;
 }
 
-.li-desplegable-vertical {
+/* .li-desplegable-vertical {
   margin-right: 55px;
-}
+} */
 
-.li-desplegable-vertical:last-child {
-  margin-right: 0;
-}
+
 
 ul li:first-child > .a-submenu-desplegable-vertical {
   padding: 20px 20px 10px 20px;

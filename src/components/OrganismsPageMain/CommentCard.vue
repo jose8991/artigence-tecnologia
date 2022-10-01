@@ -1,6 +1,6 @@
 <template>
     <section class="card container">
-        <article class="card__item card__item--first">
+        <!-- <article class="card__item card__item--first">
             <p class="card__paragraph">
                 Artigence ha ayudado en la creacion de copywrite para los diseños en
                 redes sociales .
@@ -34,32 +34,31 @@
                     <p class="card__job">Operaria maquina Plana, Ama de casa</p>
                 </div>
             </div>
-        </article>
+        </article> -->
 
-        <article class="card__item">
+        <article class="card__item" v-for="option in options" :key="option">
             <p class="card__paragraph">
-                Artigence ayudo en mi proceso y desarrollo profesional y personal,
-                logrando ayudar a trabjabadores y amas de casa
+                {{option.comment}}
             </p>
 
             <div class="card__profile">
                 <figure class="card__picture">
-                    <img src="@/assets/images_new_project/jose.jpeg" class="card__img" />
+                    <img :src="option.img" class="card__img" />
                 </figure>
 
                 <div class="card__info">
-                    <h3 class="card__name">Jose Luis Giraldo</h3>
-                    <p class="card__job">Ingeniero en sistemas</p>
+                    <h3 class="card__name">{{option.author}}</h3>
+                    <p class="card__job">{{option.description}}</p>
                 </div>
             </div>
         </article>
     </section>
 </template>
 
-<script>
-export default {
+<script setup>
+import dataComment from "@/data/comment.json";
+const options= dataComment
 
-}
 </script>
 
 <style  scoped>

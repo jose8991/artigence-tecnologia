@@ -1,0 +1,22 @@
+[
+   {
+    "img":"img/services/anyi1.jpg",
+    "comment":"Artigence ha ayudado en la creacion de copywrite para los diseños en redes sociales ",
+    "author":"Anyi Hernandez",
+    "description":"Community Manager,Artigence ha ayudado en la creacion de copywrite para los diseños en redes sociales."
+   },
+   {
+    "img":"img/personal/yoly.jpg",
+    "comment":" Artigence me a ayudado a poder dedicarle mas tiempo a mi familia,desde que la utilizo ayudo en las tareas a mis hijos mas facilmente.",
+    "author":"Yorladis Gallego",
+    "description":"Operaria maquina Plana, Ama de casa."
+   },
+   {
+    "img":"img/personal/jose.jpg",
+    "comment":" Artigence ayudo en mi proceso y desarrollo profesional y personal, logrando ayudar a cada persona que utilize esta herramienta.",
+    "author":"Jose Luis Giraldo",
+    "description":"Desarrollador FullStack."
+   }
+
+   
+]
