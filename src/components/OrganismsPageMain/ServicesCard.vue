@@ -1,34 +1,7 @@
 <template>
-       <div class="services__cards" v-for="service in servicedata" :key="service">
-         <!-- <div class="service__card">
-         <div class="cover__service__card">
-            <img
-              src="@/assets/images_new_project/pngegg.png"
-              alt="no cargo imagen de cards"
-            />
-          </div>
-          <h2 class="service__title">servicio de publicaciones</h2>
-          <p>lllllllllllllllllllllllllllllll</p>
-          <hr />
-          <div class="footer__service__card">
-            <h3 class="user__name">zzzzzzzzzzzzz</h3>
-            <i>08 marzo</i>
-          </div>
-        </div>
+       <div class="services__cards">
 
-        <div class="service__card">
-          <div class="cover__service__card">
-            <img src="@/assets/images_new_project/pngegg.png" alt="" />
-          </div>
-          <h2 class="service__title">servicio de publicaciones</h2>
-          <p>lllllllllllllllllllllllllllllll</p>
-          <hr />
-          <div class="footer__service__card">
-            <h3 class="user__name">zzzzzzzzzzzzz</h3>
-            <i>08 marzo</i>
-          </div>
-        </div> -->
-        <div class="service__card">
+        <div class="service__card"  v-for="service in servicedata" :key="service">
           <div class="cover__service__card">
             <img :src="service.img" alt="" />
           </div>

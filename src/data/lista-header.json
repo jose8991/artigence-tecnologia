@@ -32,5 +32,22 @@
         "url": "/palabras-claves"
       }
     ]
+  },
+  {
+    "titulo": "prueba",
+    "opciones": [
+      {
+        "service": "ubicacion",
+        "url": "/servicios"
+      },
+      {
+        "service": "mision y vision",
+        "url": "/historia"
+      },
+      {
+        "service": "palabras claves",
+        "url": "/palabras-claves"
+      }
+    ]
   }
 ]
