@@ -1,6 +1,5 @@
 <template>
        <div class="services__cards">
-
         <div class="service__card"  v-for="service in servicedata" :key="service">
           <div class="cover__service__card">
             <img :src="service.img" alt="" />

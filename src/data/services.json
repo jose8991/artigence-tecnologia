@@ -1,6 +1,13 @@
 [
     {
-        "img":"..../public/img/pngegg.png",
+        "img":"img/pngegg.png",
+        "service":"publicaciones",
+        "paragraph":"Lorem prueba ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl.",
+        "secondaryDegree":"segundo titulo o logo",
+        "linkService":"/publicaciones"
+    },
+    {
+        "img":"https://www.xtrafondos.com/wallpapers/resized/paisaje-digital-en-atardecer-5846.jpg?s=large",
         "service":"publicaciones",
         "paragraph":"Lorem prueba ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl.",
         "secondaryDegree":"segundo titulo o logo",
