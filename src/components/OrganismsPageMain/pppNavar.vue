@@ -38,7 +38,7 @@
 <script setup>
 import mainButton from "@/components/atoms/MainButton.vue";
 import DatosHeader from "@/data/lista-header.json";
-import responsive from "@/components/OrganismsPageMain/responsive.js";
+import responsive from "@/components/modules/responsive.js";
 console.log(responsive);
 const options = DatosHeader;
 

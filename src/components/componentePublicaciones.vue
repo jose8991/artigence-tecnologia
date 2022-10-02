@@ -1,10 +1,11 @@
 <template>
   <input type="text" v-model="texto" />
-  <button @click="postPost" class="btn btn-primary mt-4" type="submit">
+  <h1>{{ texto }}</h1>
+  <button @click="prueba" class="btn btn-primary mt-4" type="submit">
     consultar
   </button>
   <div v-if="loading">
-    <TransitionService />
+    <TransitionPrincipal />
     <h1>cargandoooooo</h1>
   </div>
 
@@ -13,45 +14,25 @@
   </div>
 </template>
 
-<script>
-import axios from "axios";
+<script setup>
+import { ref } from "vue";
 import TransitionPrincipal from "@/components/TransitionService.vue";
+import {postPost} from "@/components/modules/responseModel.js";
+let texto = ref("Ciclismo");
+const resultado = ref("");
+let loading = ref(false);
 
 
-export default {
-  data() {
-    return {
-      texto: "clase de programacion",
-      resultado: null,
-      loading: false,
-    };
-  },
-
-  components: {
-    TransitionService: TransitionPrincipal,
-  },
-  methods: {
-    // Pushes posts to the server when called.
-    postPost() {
-      console.log("entro a la funcion");
-
-      this.loading = true;
-      let post = {
-        tipo: "publicacion",
-        contenido: this.texto,
-      };
-      axios
-        .post(`https://in.markingall.com/`, post)
-        .then((response) => {
-          this.resultado = response.data.respuesta;
-          this.loading = false;
-        })
-        .catch((e) => {
-          this.errors.push(e);
-        });
-    },
-  },
-};
+async function prueba() {
+  loading.value = true;
+  let post = ref({
+    tipo: "publicacion",
+    contenido: texto.value,
+  });
+  const response=await postPost(post.value);
+  loading.value = response.recarga;
+  resultado.value = response.post;
+}
 </script>
 
 <style scoped>
