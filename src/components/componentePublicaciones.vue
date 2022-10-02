@@ -4,7 +4,7 @@
     consultar
   </button>
   <div v-if="loading">
-    <TransitionService />
+    <TransitionPrincipal />
     <h1>cargandoooooo</h1>
   </div>
 
@@ -13,43 +13,48 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import axios from "axios";
 import TransitionPrincipal from "@/components/TransitionService.vue";
-export default {
-  data() {
-    return {
-      texto: "clase de programacion",
-      resultado: null,
-      loading: false,
-    };
-  },
+import { ref } from "@vue/reactivity";
 
-  components: {
-    TransitionService: TransitionPrincipal,
-  },
-  methods: {
-    // Pushes posts to the server when called.
-    postPost() {
-      console.log("entro a la funcion");
+const result=ref("")
+console.log(result)
+console.log(axios)
+// export default {
+//   data() {
+//     return {
+//       texto: "clase de programacion",
+//       resultado: null,
+//       loading: false,
+//     };
+//   },
 
-      this.loading = true;
-      let post = {
-        tipo: "publicacion",
-        contenido: this.texto,
-      };
-      axios
-        .post(`https://in.markingall.com/`, post)
-        .then((response) => {
-          this.resultado = response.data.respuesta;
-          this.loading = false;
-        })
-        .catch((e) => {
-          this.errors.push(e);
-        });
-    },
-  },
-};
+//   components: {
+//     TransitionService: TransitionPrincipal,
+//   },
+//   methods: {
+//     // Pushes posts to the server when called.
+//     postPost() {
+//       console.log("entro a la funcion");
+
+//       this.loading = true;
+//       let post = {
+//         tipo: "publicacion",
+//         contenido: this.texto,
+//       };
+//       axios
+//         .post(`https://in.markingall.com/`, post)
+//         .then((response) => {
+//           this.resultado = response.data.respuesta;
+//           this.loading = false;
+//         })
+//         .catch((e) => {
+//           this.errors.push(e);
+//         });
+//     },
+//   },
+// };
 </script>
 
 <style scoped>

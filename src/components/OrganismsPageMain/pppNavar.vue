@@ -203,7 +203,7 @@ nav {
   }
 
   .ul-desplegable-vertical ul > li {
-    background-color: cyan;
+    background-color: var(--blue-gradient);
   }
 }
 
