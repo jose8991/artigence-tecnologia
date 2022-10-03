@@ -1,27 +1,29 @@
 <template>
-  <input type="text" v-model="texto" />
-  <h1>{{ texto }}</h1>
-  <button @click="prueba" class="btn btn-primary mt-4" type="submit">
-    consultar
-  </button>
-  <div v-if="loading">
-    <TransitionPrincipal />
-    <h1>cargandoooooo</h1>
-  </div>
+  <div class = "fondo">
+    <div v-if="!loading">
+      <input type="text" v-model="texto" />
+      <button @click="prueba" class="btn btn-primary mt-4" type="submit">
+        consultar
+      </button>
+    </div>
+    <div v-if="loading">
+      <TransitionPrincipal />
+      <h1>cargandoooooo</h1>
+    </div>
 
-  <div v-else>
-    <h1>{{ resultado }}</h1>
+    <div v-else>
+      <h1>{{ resultado }}</h1>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import TransitionPrincipal from "@/components/TransitionService.vue";
-import {postPost} from "@/components/modules/responseModel.js";
+import { postPost } from "@/components/modules/responseModel.js";
 let texto = ref("Ciclismo");
 const resultado = ref("");
 let loading = ref(false);
-
 
 async function prueba() {
   loading.value = true;
@@ -29,7 +31,7 @@ async function prueba() {
     tipo: "publicacion",
     contenido: texto.value,
   });
-  const response=await postPost(post.value);
+  const response = await postPost(post.value);
   loading.value = response.recarga;
   resultado.value = response.post;
 }
@@ -41,6 +43,14 @@ async function prueba() {
   background-color: #f5f5f5;
 }
 h1 {
-  color: blue;
+  color: f5f5f5;
+}
+.fondo {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
+.fondo h1 {
+  color: white;
 }
 </style>
