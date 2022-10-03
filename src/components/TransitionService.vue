@@ -1,7 +1,5 @@
 <template>
 
-        <h1>prueba</h1>
-        <p>lorem ipsum</p>
         <EsperaOk/>
 
 </template>

@@ -13,7 +13,7 @@
       ></lottie-player>
 
       <h1 class="hero__title">
-        Algoritmos inteligentes para analizar y comprender mejor el texto.
+        Algoritmos inteligentes para analizar y <span class="typed"></span>comprender mejor el texto.
       </h1>
       <p class="hero__paragraph">
         La inteligencia artificial está cambiando la forma en que procesamos el
@@ -26,7 +26,19 @@
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+import Typed from "typed.js";
+setTimeout( () => {
+
+  const typed = new Typed(".typed", {
+    strings: ["analizar", "comprender", "generar"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+  console.log(typed);
+},0);
+ </script>
 
 <style scoped>
 .hero__main {

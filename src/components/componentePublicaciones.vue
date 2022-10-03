@@ -1,20 +1,22 @@
 <template>
-  <div class = "fondo">
-    <div v-if="!loading">
-      <input type="text" v-model="texto" />
-      <button @click="prueba" class="btn btn-primary mt-4" type="submit">
-        consultar
-      </button>
-    </div>
-    <div v-if="loading">
-      <TransitionPrincipal />
-      <h1>cargandoooooo</h1>
-    </div>
+  <main>
+    <div class="fondo">
+      <div v-if="!loading">
+        <input type="text" v-model="texto" />
+        <button @click="prueba" class="btn btn-primary mt-4" type="submit">
+          consultar
+        </button>
+      </div>
+      <div v-if="loading">
+        <TransitionPrincipal />
+        <h1>cargandoooooo</h1>
+      </div>
 
-    <div v-else>
-      <h1>{{ resultado }}</h1>
+      <div v-else>
+        <h1>{{ resultado }}</h1>
+      </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -38,18 +40,28 @@ async function prueba() {
 </script>
 
 <style scoped>
+  main {
+	background: blue;
+	width: 100%;
+	height: 100vh;
+	padding-top: 100px;
+	margin: auto;
+}
 .content {
   height: 1200px;
   background-color: #f5f5f5;
 }
+
 h1 {
   color: f5f5f5;
 }
-.fondo {
+
+/* .fondo {
   height: 100%;
   width: 100%;
   background-color: blue;
-}
+} */
+
 .fondo h1 {
   color: white;
 }
