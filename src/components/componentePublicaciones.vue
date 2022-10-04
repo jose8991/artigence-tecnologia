@@ -48,10 +48,6 @@ main {
   padding-top: 100px;
   margin: auto;
 }
-.content {
-  height: 1200px;
-  background-color: #f5f5f5;
-}
 
 h1 {
   color: f5f5f5;
