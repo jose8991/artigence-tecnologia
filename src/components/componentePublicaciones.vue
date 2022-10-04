@@ -59,5 +59,6 @@ h1 {
 
 .fondo__input{
   background: var(--blue-main) ;
+  color: white;
 }
 </style>
