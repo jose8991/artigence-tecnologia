@@ -31,7 +31,7 @@
         </p>
   
         <h3 class="productive__cta">
-          Mira Como Artigence Trabaja
+            <span class="typed"></span>
           <!-- <img
             src="@/assets/images_new_project/icon-arrow.svg"
             class="productive__arrow"
@@ -41,12 +41,19 @@
     </section>
   </template>
   
-  <script>
-  export default {
-    setup() {
-      return {};
-    },
-  };
+  <script setup>
+ import { onMounted } from "vue";
+import Typed from "typed.js";
+
+onMounted(() => {
+  const typed = new Typed(".typed", {
+    strings: ["analizar", "comprender", "generar"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+  console.log(typed);
+});
   </script>
   
   <style scoped>
