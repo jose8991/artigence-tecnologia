@@ -25,7 +25,7 @@ import TransitionPrincipal from "@/components/TransitionService.vue";
 import { postPost } from "@/components/modules/responseModel.js";
 import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
 let texto = ref("Ciclismo");
-const resultado = ref("prueba");
+const resultado = ref(null);
 let loading = ref(false);
 
 async function prueba() {
