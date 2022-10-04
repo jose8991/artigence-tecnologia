@@ -10,7 +10,6 @@
       </div>
       <div v-if="loading">
         <TransitionPrincipal />
-        <h1>cargandoooooo</h1>
       </div>
 
       <div v-else>
@@ -26,7 +25,7 @@ import TransitionPrincipal from "@/components/TransitionService.vue";
 import { postPost } from "@/components/modules/responseModel.js";
 import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
 let texto = ref("Ciclismo");
-const resultado = ref("");
+const resultado = ref("prueba");
 let loading = ref(false);
 
 async function prueba() {
