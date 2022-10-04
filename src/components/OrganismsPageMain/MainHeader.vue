@@ -13,7 +13,7 @@
       ></lottie-player>
 
       <h1 class="hero__title">
-         <span class="typed"></span>
+        <span class="typed"></span>
       </h1>
 
       <!-- <a href="#" class="hero__cta"> enviar </a>  -->
@@ -22,10 +22,10 @@
 </template>
 
 <script setup>
-import {onMounted} from 'vue';
+import { onMounted } from "vue";
 import Typed from "typed.js";
 
-onMounted(()=>{
+onMounted(() => {
   const typed = new Typed(".typed", {
     strings: ["analizar", "comprender", "generar"],
     typeSpeed: 100,
@@ -33,8 +33,8 @@ onMounted(()=>{
     loop: true,
   });
   console.log(typed);
-})
- </script>
+});
+</script>
 
 <style scoped>
 .hero__main {

@@ -1,20 +1,20 @@
 <template>
   <body>
-    <MainNavar/>
-    <MainHeader/>
+    <MainNavar />
+    <MainHeader />
     <main class="main">
-      <ServicesCard/>
-      <AbautCards/>
-      <MainService/>
-      <CommentCard/>
-      <SecundaryContact/>
+      <ServicesCard />
+      <AbautCards />
+      <MainService />
+      <CommentCard />
+      <SecundaryContact />
     </main>
-    <MainFooter/>
+    <MainFooter />
   </body>
 </template>
 
 <script setup>
-import MainNavar from "@/components/OrganismsPageMain/pppNavar.vue";
+import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
 import MainHeader from "@/components/OrganismsPageMain/MainHeader.vue";
 import ServicesCard from "@/components/OrganismsPageMain/ServicesCard.vue";
 import AbautCards from "@/components/OrganismsPageMain/AbautCards.vue";
@@ -32,7 +32,6 @@ body {
   background-color: var(--blue-main);
 }
 
-
 /* .hero *{
     outline: 1px solid #fff;
 } */
@@ -46,9 +45,6 @@ body {
     background-color: aqua;
 } */
 
-
-
-
 /* final card */
 
 .container {
@@ -58,6 +54,4 @@ body {
   padding: 60px 0;
   overflow: hidden;
 }
-
-
 </style>

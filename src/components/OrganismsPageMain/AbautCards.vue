@@ -2,24 +2,21 @@
   <section class="about container">
     <article class="about__item" v-for="option in options" :key="option">
       <figure class="about__picture">
-        <img
-          :src="option.img"
-          class="about__img"
-        />
+        <img :src="option.img" class="about__img" />
       </figure>
 
-      <h3 class="about__title">{{option.title}}</h3>
+      <h3 class="about__title">{{ option.title }}</h3>
 
       <p class="about__paragraph">
-        {{option.desc}}
+        {{ option.desc }}
       </p>
     </article>
   </section>
 </template>
 
 <script setup>
-import dataAbout from "@/data/about-services.json"
-const options=dataAbout;
+import dataAbout from "@/data/about-services.json";
+const options = dataAbout;
 </script>
 
 <style scoped>

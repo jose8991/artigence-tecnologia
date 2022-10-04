@@ -1,50 +1,55 @@
 <template>
-      <section class="productive container">
-        <figure class="productive__picture">
-          <lottie-player src="https://lottie.host/32827abf-03db-40b4-8cc0-c22276aeb0d7/IVDjFNwyad.json" background="transparent" speed="1"  loop autoplay class="productive__img"></lottie-player>
-          <!-- <img
+  <section class="productive container">
+    <figure class="productive__picture">
+      <lottie-player
+        src="https://lottie.host/32827abf-03db-40b4-8cc0-c22276aeb0d7/IVDjFNwyad.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+        class="productive__img"
+      ></lottie-player>
+      <!-- <img
             src="@/assets/images_new_project/illustration-stay-productive.png"
             class="productive__img"
           /> -->
-        </figure>
+    </figure>
 
-        <div class="productive__texts">
-          <h3 class="productive__title">
-            Aplica Inteligencia Artificial, y Optimiza tu Tiempo
-          </h3>
+    <div class="productive__texts">
+      <h3 class="productive__title">
+        Aplica Inteligencia Artificial, y Optimiza tu Tiempo
+      </h3>
 
-          <p class="productive__paragraph">
-            Logrando disminuir en las actividades el timepo y la calidad de
-            mejora de los trabajos escolares.
-          </p>
+      <p class="productive__paragraph">
+        Logrando disminuir en las actividades el timepo y la calidad de mejora
+        de los trabajos escolares.
+      </p>
 
-          <p class="productive__paragraph">
-            Con creacion artificial y desarrollo inteligente realiza destacados
-            copyswrite y ayuda a los community manager.
-          </p>
+      <p class="productive__paragraph">
+        Con creacion artificial y desarrollo inteligente realiza destacados
+        copyswrite y ayuda a los community manager.
+      </p>
 
-          <a href="#" class="productive__cta">
-            Mira Como Artigence Trabaja
-            <img
-              src="@/assets/images_new_project/icon-arrow.svg"
-              class="productive__arrow"
-            />
-          </a>
-        </div>
-      </section>
+      <a href="#" class="productive__cta">
+        Mira Como Artigence Trabaja
+        <img
+          src="@/assets/images_new_project/icon-arrow.svg"
+          class="productive__arrow"
+        />
+      </a>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-    setup () {
-        
-
-        return {}
-    }
-}
+  setup() {
+    return {};
+  },
+};
 </script>
 
-<style  scoped>
+<style scoped>
 .productive {
   color: #fff;
   display: grid;
@@ -83,17 +88,14 @@ export default {
 }
 
 @media (min-width: 740px) {
+  .productive {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
 
-
-
-.productive {
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
-.productive__title {
-  font-size: 2rem;
-  margin-bottom: 0.6em;
-}
+  .productive__title {
+    font-size: 2rem;
+    margin-bottom: 0.6em;
+  }
 }
 </style>

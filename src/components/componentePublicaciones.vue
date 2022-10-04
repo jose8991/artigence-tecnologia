@@ -1,5 +1,5 @@
 <template>
-  <MainNavar/>
+  <MainNavar />
   <main>
     <div class="fondo">
       <div v-if="!loading">
@@ -24,7 +24,7 @@
 import { ref } from "vue";
 import TransitionPrincipal from "@/components/TransitionService.vue";
 import { postPost } from "@/components/modules/responseModel.js";
-import MainNavar from "@/components/OrganismsPageMain/pppNavar.vue";
+import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
 let texto = ref("Ciclismo");
 const resultado = ref("");
 let loading = ref(false);
@@ -42,12 +42,12 @@ async function prueba() {
 </script>
 
 <style scoped>
-  main {
-	background: blue;
-	width: 100%;
-	height: 100vh;
-	padding-top: 100px;
-	margin: auto;
+main {
+  background: var(--blue-main);
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  margin: auto;
 }
 .content {
   height: 1200px;
@@ -57,12 +57,6 @@ async function prueba() {
 h1 {
   color: f5f5f5;
 }
-
-/* .fondo {
-  height: 100%;
-  width: 100%;
-  background-color: blue;
-} */
 
 .fondo h1 {
   color: white;

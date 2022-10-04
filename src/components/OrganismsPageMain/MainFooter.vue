@@ -1,84 +1,78 @@
 <template>
+  <footer class="footer">
+    <section class="footer__container container">
+      <img
+        src="@/assets/images_new_project/logo-no-background.png"
+        class="footer__logo"
+      />
 
-<footer class="footer">
-      <section class="footer__container container">
-        <img
-          src="@/assets/images_new_project/logo-no-background.png"
-          class="footer__logo"
-        />
+      <div class="footer__items">
+        <p class="footer__contact footer__contact--first">
+          <img
+            src="@/assets/images_new_project/location.png"
+            class="footer__icon"
+          />
+          Risaralda,Dosquebradas <br />
+          Laureles2 manzan8 casa2 <br />
+          C.P 661002
+        </p>
 
-        <div class="footer__items">
-          <p class="footer__contact footer__contact--first">
+        <div class="footer__content">
+          <p class="footer__contact footer__contact--second">
             <img
-              src="@/assets/images_new_project/location.png"
+              src="@/assets/images_new_project/whatsapp.png"
               class="footer__icon"
             />
-            Risaralda,Dosquebradas <br />
-            Laureles2 manzan8 casa2 <br />
-            C.P 661002
+            +57 318 634 71 37 <br />
+            +57 301 573 04 64
           </p>
 
-          <div class="footer__content">
-            <p class="footer__contact footer__contact--second">
+          <div class="footer__location">
+            <p class="footer__contact">
               <img
-                src="@/assets/images_new_project/whatsapp.png"
+                src="@/assets/images_new_project/gmail.png"
                 class="footer__icon"
               />
-              +57 318 634 71 37 <br />
-              +57 301 573 04 64
+              artigencei@gmail.com
             </p>
-
-            <div class="footer__location">
-              <p class="footer__contact">
-                <img
-                  src="@/assets/images_new_project/gmail.png"
-                  class="footer__icon"
-                />
-                artigencei@gmail.com
-              </p>
-            </div>
-          </div>
-
-          <nav class="footer__nav">
-            <a href="#" class="footer__link">Terminos y condiciones</a>
-            <a href="#" class="footer__link">Acerca de Nosotros</a>
-            <a href="#" class="footer__link">Comentarios</a>
-          </nav>
-
-          <nav class="footer__nav">
-            <a href="#" class="footer__link">Contactenos</a>
-            <a href="#" class="footer__link">Servicios</a>
-            <a href="#" class="footer__link">Soporte</a>
-          </nav>
-
-          <div class="footer__social">
-            <a href="#" class="footer__media"
-              ><img
-                src="@/assets/images_new_project/fb.svg"
-                class="footer__img"
-            /></a>
-            <a href="#" class="footer__media"
-              ><img
-                src="@/assets/images_new_project/twitter.svg"
-                class="footer__img"
-            /></a>
-            <a href="#" class="footer__media footer__media--last"
-              ><img
-                src="@/assets/images_new_project/instagram.svg"
-                class="footer__img"
-            /></a>
           </div>
         </div>
-      </section>
-    </footer>
+
+        <nav class="footer__nav">
+          <a href="#" class="footer__link">Terminos y condiciones</a>
+          <a href="#" class="footer__link">Acerca de Nosotros</a>
+          <a href="#" class="footer__link">Comentarios</a>
+        </nav>
+
+        <nav class="footer__nav">
+          <a href="#" class="footer__link">Contactenos</a>
+          <a href="#" class="footer__link">Servicios</a>
+          <a href="#" class="footer__link">Soporte</a>
+        </nav>
+
+        <div class="footer__social">
+          <a href="#" class="footer__media"
+            ><img src="@/assets/images_new_project/fb.svg" class="footer__img"
+          /></a>
+          <a href="#" class="footer__media"
+            ><img
+              src="@/assets/images_new_project/twitter.svg"
+              class="footer__img"
+          /></a>
+          <a href="#" class="footer__media footer__media--last"
+            ><img
+              src="@/assets/images_new_project/instagram.svg"
+              class="footer__img"
+          /></a>
+        </div>
+      </div>
+    </section>
+  </footer>
 </template>
 
-<script>
+<script></script>
 
-</script>
-
-<style  scoped>
-
+<style scoped>
 .nav {
   display: flex;
   align-items: center;
@@ -103,12 +97,6 @@
 .nav__link:first-of-type {
   margin-left: auto;
 }
-
-
-
-
-
-
 
 .footer {
   background-color: var(--blue-footer);
@@ -177,7 +165,6 @@
 }
 
 @media (min-width: 740px) {
-
   .footer__items {
     grid-template-columns: 2fr 1fr max-content max-content 1fr;
     gap: 2em;
@@ -199,6 +186,4 @@
     margin-right: 0;
   }
 }
-
-
 </style>
