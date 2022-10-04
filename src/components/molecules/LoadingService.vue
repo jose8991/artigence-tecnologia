@@ -30,13 +30,13 @@
           copyswrite y ayuda a los community manager.
         </p>
   
-        <a href="#" class="productive__cta">
+        <h3 class="productive__cta">
           Mira Como Artigence Trabaja
           <!-- <img
             src="@/assets/images_new_project/icon-arrow.svg"
             class="productive__arrow"
           /> -->
-        </a>
+        </h3>
       </div>
     </section>
   </template>
