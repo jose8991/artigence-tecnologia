@@ -3,7 +3,7 @@
   <main>
     <div class="fondo">
       <div v-if="!loading">
-        <input type="text" v-model="texto" />
+        <input type="text" class="fondo__input" v-model="texto" />
         <button @click="prueba" class="btn btn-primary mt-4" type="submit">
           consultar
         </button>
@@ -55,5 +55,9 @@ h1 {
 
 .fondo h1 {
   color: white;
+}
+
+.fondo__input{
+  background: var(--blue-main) ;
 }
 </style>
