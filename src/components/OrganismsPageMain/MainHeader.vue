@@ -13,23 +13,19 @@
       ></lottie-player>
 
       <h1 class="hero__title">
-        Algoritmos inteligentes para analizar y <span class="typed"></span>comprender mejor el texto.
+         <span class="typed"></span>
       </h1>
-      <p class="hero__paragraph">
-        La inteligencia artificial está cambiando la forma en que procesamos el
-        texto. Ahora, podemos usar algoritmos para analizar y comprender mejor
-        el texto. Esto te permite generar texto de forma más eficiente y
-        efectiva.
-      </p>
+
       <!-- <a href="#" class="hero__cta"> enviar </a>  -->
     </section>
   </header>
 </template>
 
 <script setup>
+import {onMounted} from 'vue';
 import Typed from "typed.js";
-setTimeout( () => {
 
+onMounted(()=>{
   const typed = new Typed(".typed", {
     strings: ["analizar", "comprender", "generar"],
     typeSpeed: 100,
@@ -37,7 +33,7 @@ setTimeout( () => {
     loop: true,
   });
   console.log(typed);
-},0);
+})
  </script>
 
 <style scoped>
@@ -65,7 +61,7 @@ setTimeout( () => {
   width: 100%;
   word-wrap: break-word;
   /* position:absolute; */
-  color: red;
+  color: var(--gradient);
   font-family: var(--heading-font);
 }
 

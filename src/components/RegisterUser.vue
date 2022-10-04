@@ -1,4 +1,5 @@
 <template>
+	<MainNavar/>
 	<main>
 		<div class="contenedor__todo">
 			<div class="caja__trasera">
@@ -242,7 +243,7 @@ main {
 	main {
 		padding-top: 20px;
 		padding-bottom: 100px;
-		background: rgb(255, 255, 255);
+		background: red;
 	}
 
   .contenedor__login-register{

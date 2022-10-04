@@ -66,5 +66,22 @@
         "url": "/palabras-claves"
       }
     ]
+  },
+  {
+    "titulo": "ubicacion",
+    "opciones": [
+      {
+        "service": "cline",
+        "url": "/clima"
+      },
+      {
+        "service": "historia",
+        "url": "/historia"
+      },
+      {
+        "service": "palabras claves",
+        "url": "/palabras-claves"
+      }
+    ]
   }
 ]
