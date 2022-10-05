@@ -4,7 +4,7 @@ export async function postPost(post) {
     post: "",
     recarga: false,
   };
-  const result = await axios.post(`https://in.markingall.com/`, post);
+  const result = await axios.post(`https://api.artigencetecnologia.com.co/`, post);
 
   let respuesta = result.data.respuesta;
   data = {
