@@ -1,20 +1,20 @@
 [
     {
-        "img":"img/services/pngegg.png",
+        "img":"img/services/writingg.png",
         "service":"publicaciones",
-        "paragraph":"Lorem prueba ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl.",
-        "secondaryDegree":"segundo titulo o logo",
+        "paragraph":" ¡Prueba nuestro servicio de inteligencia artificial para tus copys! Nuestro sistema es capaz de generar textos originales y de alta calidad, ¡perfectos para cualquier necesidad!",
+        "secondaryDegree":"artigence",
         "linkService":"/publicaciones"
     },
     {
-        "img":"https://www.xtrafondos.com/wallpapers/resized/paisaje-digital-en-atardecer-5846.jpg?s=large",
-        "service":"publicaciones",
-        "paragraph":"Lorem prueba ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl.",
+        "img":"https://www.iartificial.net/wp-content/uploads/2019/02/IA.webp",
+        "service":"creador de historias",
+        "paragraph":"El servicio se basa en un algoritmo que analiza el contenido de un texto y genera una historia a partir de él. Los usuarios pueden elegir el tema de su historia, el número de personajes y el género literario.",
         "secondaryDegree":"segundo titulo o logo",
-        "linkService":"/publicaciones"
+        "linkService":"/historias"
     },
     {
-        "img":"https://www.xtrafondos.com/wallpapers/resized/paisaje-digital-en-atardecer-5846.jpg?s=large",
+        "img":"https://www.iartificial.net/wp-content/uploads/2019/02/IA.webp",
         "service":"publicaciones",
         "paragraph":"Lorem prueba ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl. Sed euismod, nunc ut aliquam tincidunt, nisl elit aliquam ipsum, nec aliquam nisl lorem quis nisl.",
         "secondaryDegree":"segundo titulo o logo",

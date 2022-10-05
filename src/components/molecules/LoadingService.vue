@@ -14,8 +14,16 @@
               class="productive__img"
             /> -->
       </figure>
+
   
       <div class="productive__texts">
+        <h1 class="productive__cta">
+            <span class="typed"></span>
+          <!-- <img
+            src="@/assets/images_new_project/icon-arrow.svg"
+            class="productive__arrow"
+          /> -->
+        </h1>
         <h3 class="productive__title">
           Aplica Inteligencia Artificial, y Optimiza tu Tiempo
         </h3>
@@ -30,13 +38,7 @@
           copyswrite y ayuda a los community manager.
         </p>
   
-        <h3 class="productive__cta">
-            <span class="typed"></span>
-          <!-- <img
-            src="@/assets/images_new_project/icon-arrow.svg"
-            class="productive__arrow"
-          /> -->
-        </h3>
+
       </div>
     </section>
   </template>
@@ -47,9 +49,9 @@ import Typed from "typed.js";
 
 onMounted(() => {
   const typed = new Typed(".typed", {
-    strings: ["cargando"],
-    typeSpeed: 200,
-    backSpeed: 200,
+    strings: ["cargando...", "cargando...", "cargando..."],
+    typeSpeed: 100,
+    backSpeed: 60,
     loop: true,
   });
   console.log(typed);
@@ -86,6 +88,7 @@ onMounted(() => {
     color: var(--cyan-gradient);
     line-height: 2.5;
     text-decoration: none;
+    font-size: 3rem;
     border-bottom: 1px solid var(--cyan-gradient);
   }
   
