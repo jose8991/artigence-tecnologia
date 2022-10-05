@@ -27,7 +27,7 @@ import Typed from "typed.js";
 
 onMounted(() => {
   const typed = new Typed(".typed", {
-    strings: ["analizar", "comprender", "generar"],
+    strings: ["analizar", "comprender", "generar",".....................pruebaaaaa"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
