@@ -24,7 +24,7 @@ import { ref } from "vue";
 import TransitionPrincipal from "@/components/TransitionService.vue";
 import { postPost } from "@/components/modules/responseModel.js";
 import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
-let texto = ref("Ciclismo");
+let texto = ref("");
 const resultado = ref(null);
 let loading = ref(false);
 
@@ -57,8 +57,8 @@ h1 {
   color: white;
 }
 
-.fondo__input{
-  background: var(--blue-main) ;
+.fondo__input {
+  background: var(--blue-main);
   color: white;
 }
 </style>
