@@ -1,24 +1,2 @@
-# vue-js
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://artigencetecnologia.com.co/
+El servicio de inteligencia artificial es el mejor aliado para la producción de textos de alta calidad. Con nuestra tecnología, podrás generar textos de manera rápida y eficiente, sin necesidad de dedicarle mucho tiempo y esfuerzo.
