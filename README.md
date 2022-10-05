@@ -1,24 +1,3 @@
-# vue-js
+https://artigencetecnologia.com.co/
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+¡Prueba nuestro servicio de inteligencia artificial para tus copys! Nuestro sistema es capaz de generar textos originales y de alta calidad, ¡perfectos para cualquier necesidad!"
