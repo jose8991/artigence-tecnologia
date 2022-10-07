@@ -4,13 +4,13 @@
     <label for="check" id="menu-contraido" style="cursor: pointer">
       <i class="fas fa-bars"></i> Menú
     </label>
-    <a href="/site/home" id="logo-menu-head">
+    <RouterLink to="/" id="logo-menu-head">
       <img
         class="height_30px-less-500px height_45px-up-500px"
         src="@/assets/images_new_project/logo-no-background.png"
         alt="logo"
       />
-    </a>
+    </RouterLink>
     <ul class="ul-desplegable-vertical">
       <li
         class="li-desplegable-vertical"
