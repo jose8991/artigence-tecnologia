@@ -1,38 +1,48 @@
 <template>
-  <nav id="container-desplegable-vertical">
-    <input type="checkbox" id="check" />
+  <nav
+    class="justify-content_space-between-less-1000px"
+    id="container-desplegable-vertical"
+  >
+    <input type="radio" id="check" />
+    <label id="backdrop-menu" for="check"></label>
     <label for="check" id="menu-contraido" style="cursor: pointer">
       <i class="fas fa-bars"></i> Menú
     </label>
     <RouterLink to="/" id="logo-menu-head">
       <img
-        class="height_30px-less-500px height_45px-up-500px"
+        class="
+          lerpw--height--i-1000px--45px--f-500px--30px--ends
+        "
         src="@/assets/images_new_project/logo-no-background.png"
-        alt="logo"
       />
     </RouterLink>
-    <ul class="ul-desplegable-vertical">
+    <ul 
+      class="
+        ul-desplegable-vertical
+        lerpw--font-size--i-2000px--20px--f-1000px--15px--ends
+      "
+    >
       <li
         class="li-desplegable-vertical"
         v-for="option in options"
         :key="option"
       >
         <label class="label-desplegable-vertical" :for="option.titulo">
-          <span>{{ option.titulo }}</span>
+          {{ option.titulo }}
           <div class="underline"></div>
         </label>
-        <input type="checkbox" :id="option.titulo" />
+        <input type="radio" :id="option.titulo" name="open-menu" />
         <ul class="desplegable-vertical-submenu1">
           <li v-for="subconsultas in option.opciones" :key="subconsultas">
-            <router-link
+            <RouterLink
               :to="subconsultas.url"
               class="a-submenu-desplegable-vertical"
             >
               <label>
-                <span>{{ subconsultas.service }}</span>
+                {{ subconsultas.service }}
                 <div class="underline-sub-menu"></div>
               </label>
-            </router-link>
+            </RouterLink>
           </li>
         </ul>
       </li>
@@ -41,7 +51,7 @@
     <mainButton
       title="registrarse"
       link="/registrarse"
-      class="font-size_8px-less-450px"
+      class=" lerpw--font-size--i-1000px--15px--f-450px--8px--ends"
     />
   </nav>
 </template>
@@ -50,11 +60,29 @@
 import mainButton from "@/components/atoms/MainButton.vue";
 import DatosHeader from "@/data/lista-header.json";
 import responsive from "@/components/modules/responsive.js";
+import responsive_lerpw from "@/components/modules/responsive-lerpw-css.js";
+import { onMounted } from "vue";
 console.log(responsive);
+console.log(responsive_lerpw);
 const options = DatosHeader;
+onMounted(() => {
+  Array.from(
+    document.getElementsByTagName("nav")[0].getElementsByTagName("label")
+  )
+    .filter((x) => !!x.htmlFor)
+    .forEach((element) => {
+      element.onclick = () => {
+        let check_lang = document.getElementById(element.htmlFor);
+        if (check_lang.checked)
+          setTimeout(() => (check_lang.checked = false), 0);
+      };
+    });
+});
 </script>
 
 <style scoped>
+
+
 .ul-desplegable-vertical label {
   font-weight: normal;
   position: relative;
@@ -66,11 +94,12 @@ const options = DatosHeader;
   z-index: 99999;
 }
 
-.ul-desplegable-vertical input[type="checkbox"] {
+.ul-desplegable-vertical input[type="radio"] {
   display: none;
 }
 
 #container-desplegable-vertical .ul-desplegable-vertical {
+  z-index: 99998;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -84,6 +113,7 @@ const options = DatosHeader;
   padding: 0;
 }
 
+
 .ul-desplegable-vertical li a {
   cursor: pointer;
 }
@@ -94,11 +124,13 @@ const options = DatosHeader;
 
 .ul-desplegable-vertical li a[href="/site/contactus"] {
   background: white;
-  color: #3843d0 !important;
+  color: var(--blue-gradient) !important;
   font-weight: bolder;
   border-radius: 30px;
   padding: 5px 15px;
 }
+
+
 
 .ul-desplegable-vertical li a {
   text-decoration: none;
@@ -110,10 +142,9 @@ const options = DatosHeader;
   display: block;
 }
 
-/* color el cual abre el ul */
 .ul-desplegable-vertical ul {
   /* este es el submenu */
-  background-color: var(--blue-intro);
+  background-color:var(--blue-intro);
   border-radius: 0px 0px 10px 10px;
   overflow: hidden;
 }
@@ -124,6 +155,11 @@ const options = DatosHeader;
 
 .desplegable-vertical-submenu2 {
   min-width: 80px;
+}
+
+.desplegable-vertical-submenu3 {
+  min-width: 200px;
+  transform: translateX(-50%);
 }
 
 .ul-desplegable-vertical li a:hover {
@@ -162,6 +198,7 @@ nav {
 }
 
 #menu-contraido {
+  margin-left: 40px;
   display: none;
 }
 
@@ -184,22 +221,35 @@ nav {
 }
 
 @media (max-width: 1000px) {
+  #ajustador-de-menu {
+    display: block !important;
+  }
+
+  .li-desplegable-vertical {
+    margin-right: 0 !important;
+  }
+
   #menu-contraido {
     display: block;
   }
 
   /* Selecciona el submenú y lo hace visible justo debajo del encabezado */
-  .ul-desplegable-vertical input[type="checkbox"]:checked ~ ul {
+  .ul-desplegable-vertical input[type="radio"]:checked ~ ul {
     display: block !important;
     position: relative !important;
+  }
+
+  #check:checked ~ #backdrop-menu {
+    opacity: 0.2;
+    display: block !important;
   }
 
   #container-desplegable-vertical .ul-desplegable-vertical {
     overflow-y: auto;
     position: fixed !important;
     display: block !important;
-    width: 40%;
-    height: calc(100vh - var(--height));
+    width: 40vw;
+    height: 100vh;
     background: var(--blue-intro);
     top: 70px;
     left: -100%;
@@ -210,13 +260,19 @@ nav {
     border: none;
   }
 
+  .li-desplegable-vertical {
+    margin-bottom: 15px !important;
+  }
+
   .ul-desplegable-vertical ul > li {
-    background-color: var(--blue-gradient);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
 
 .underline,
 .underline-sub-menu {
+  pointer-events: none;
   display: inline-block;
   width: 0;
   height: 100%;
@@ -230,7 +286,7 @@ nav {
 }
 
 .underline-sub-menu {
-  border-bottom: 4px solid var(--blue-gradient);
+  border-bottom: 4px solid #62E0D9;
 }
 
 li:hover label > .underline {
@@ -245,24 +301,42 @@ li:hover label > .underline {
   position: relative;
 }
 
-/* .li-desplegable-vertical {
+.li-desplegable-vertical {
   margin-right: 55px;
-} */
+}
+
+.li-desplegable-vertical:last-child {
+  margin-right: 0;
+}
 
 ul li:first-child > .a-submenu-desplegable-vertical {
-  padding: 20px 20px 10px 20px;
+  padding: var(--distance-items-submenu) var(--distance-items-submenu)
+    calc(var(--distance-items-submenu) / 2) var(--distance-items-submenu);
 }
 
 ul li:last-child > .a-submenu-desplegable-vertical {
-  padding: 10px 20px 20px 20px;
+  padding: calc(var(--distance-items-submenu) / 2) var(--distance-items-submenu)
+    var(--distance-items-submenu) var(--distance-items-submenu);
 }
 
 ul li > .a-submenu-desplegable-vertical {
-  padding: 10px 20px;
+  padding: calc(var(--distance-items-submenu) / 2) var(--distance-items-submenu);
 }
 
 .a-submenu-desplegable-vertical:hover .underline-sub-menu {
   width: 100%;
   transition: all 1s;
+}
+
+#backdrop-menu {
+  background-color: black;
+  position: fixed;
+  top: var(--height);
+  left: 40vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99997;
+  opacity: 0;
+  display: none;
 }
 </style>
