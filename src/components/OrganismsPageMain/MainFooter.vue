@@ -9,7 +9,7 @@
       <div class="footer__items">
         <p class="footer__contact footer__contact--first">
           <img
-            src="@/assets/images_new_project/location.png"
+            src="@/assets/images_new_project/icon-location.svg"
             class="footer__icon"
           />
           Risaralda,Dosquebradas <br />
@@ -20,7 +20,7 @@
         <div class="footer__content">
           <p class="footer__contact footer__contact--second">
             <img
-              src="@/assets/images_new_project/whatsapp.png"
+              src="@/assets/images_new_project/whatsapp.svg"
               class="footer__icon"
             />
             +57 318 634 71 37 <br />
@@ -30,7 +30,7 @@
           <div class="footer__location">
             <p class="footer__contact">
               <img
-                src="@/assets/images_new_project/gmail.png"
+                src="@/assets/images_new_project/gmail.svg"
                 class="footer__icon"
               />
               artigencei@gmail.com

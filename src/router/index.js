@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import VistaPrincipal from "../views/VistaPrincipal.vue";
 import ServicioPublicacion from "../views/ServicioPublicaciones.vue";
 import RegisterAndLogin from "../views/RegisterLogin.vue";
+import ContactMain from "../views/ContactMain.vue";
+import MissionVision from "../views/MissionVision.vue";
 
 const routes = [
   {
@@ -17,6 +19,14 @@ const routes = [
   {
     path: "/registrarse",
     component: RegisterAndLogin,
+  },
+  {
+    path: "/contactenos",
+    component: ContactMain,
+  },
+  {
+    path: "/historia",
+    component: MissionVision,
   },
 ];
 
