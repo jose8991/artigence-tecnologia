@@ -1,6 +1,12 @@
 <template>
   <MainNavar />
   <main>
+    <div class="texto">
+      <p> En esta opcion se haran copys para tus publicaciones <br>
+         de manera acertiva y efectiva, porfavor pon en la caja <br>
+         de texto de una a 5 palabras claves que creas necesarias para <br>
+        realizar el copy de tu agrado <br> </p>
+    </div>
     <div class="fondo">
       <div v-if="!loading">
         <form action="">
@@ -23,6 +29,8 @@
         <h1>{{ resultado }}</h1>
       </div>
     </div>
+
+   
   </main>
 </template>
 
@@ -84,6 +92,19 @@ Web hecha con AlexCG Design, si te sirvió la plantilla por favor entra a AlexCG
   box-sizing: border-box;
 }
 
+p {
+  color:white;
+  border:solid white;
+  text-align: center;
+  padding:2em 2em;
+  border-radius: 10em;
+  width: 50%;
+  font-family: var(--body-font);
+  margin: 0 auto;
+
+}
+
+  
 body {
   background: #fc5c7d;
   /* fallback for old browsers */
@@ -108,10 +129,11 @@ h1 {
 form {
   background: #fff;
   width: 30%;
-  padding: 10px 0;
+  padding: 10px 10px;
   border-radius: 10px;
   box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-}
+  margin:0 auto;
+  }
 
 .form {
   width: 100%;

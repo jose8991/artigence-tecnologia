@@ -51,13 +51,14 @@
 <style scoped>
 
 
+
 .background1-left-column{
 	background: linear-gradient(180deg,#21c8f6,#637bff);
 }
 
 
 .background2-left-column{
-	background: linear-gradient(180deg ,#6edcc4,#1aab8b);
+	background: linear-gradient(180deg,#21c8f6,#637bff);
 }
 
 
@@ -67,6 +68,7 @@
 	text-decoration: none;
 	box-sizing: border-box;
 	border: none;
+  /*background: var(--blue-footer);*/
 }
 
 
