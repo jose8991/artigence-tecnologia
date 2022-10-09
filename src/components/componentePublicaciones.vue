@@ -69,7 +69,7 @@ h1 {
 }
 
 .fondo h1 {
-  color: black;
+  color: white;
   text-align: center;
 }
 
@@ -94,13 +94,15 @@ Web hecha con AlexCG Design, si te sirvió la plantilla por favor entra a AlexCG
 
 p {
   color:white;
-  border:solid white;
+  border:solid black;
   text-align: center;
   padding:2em 2em;
-  border-radius: 10em;
+  border-radius: 0.5em;
   width: 50%;
   font-family: var(--body-font);
   margin: 0 auto;
+  margin-top:0.5em;
+  box-shadow: 0 0 6px 0 black;
 
 }
 
@@ -127,12 +129,14 @@ h1 {
 }
 
 form {
-  background: #fff;
-  width: 30%;
+  background:var(--blue-main);
+  width: 50%;
   padding: 10px 10px;
   border-radius: 10px;
-  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 6px 0 black;
   margin:0 auto;
+  margin-top:0.5em;
+  color:white;
   }
 
 .form {
@@ -148,13 +152,13 @@ form .grupo {
 input,
 textarea {
   background: none;
-  color: #c6c6c6;
+  color: lightslategray;
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--cyan-gradient);
   resize: none;
 }
 
@@ -168,10 +172,11 @@ input:focus ~ label,
 input:valid ~ label,
 textarea:focus ~ label,
 textarea:valid ~ label {
-  position: absolute;
+  position: center;
   top: -14px;
-  font-size: 12px;
-  color: #2196f3;
+  font-size: 20px;
+  font-family: var(--body-font);
+  color: var(--cyan-gradient)
 }
 
 label {
