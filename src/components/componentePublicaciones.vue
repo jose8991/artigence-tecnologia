@@ -1,14 +1,16 @@
 <template>
   <MainNavar />
   <main>
-    <div class="texto">
-      <p> En esta opcion se haran copys para tus publicaciones <br>
-         de manera acertiva y efectiva, porfavor pon en la caja <br>
-         de texto de una a 5 palabras claves que creas necesarias para <br>
-        realizar el copy de tu agrado <br> </p>
-    </div>
     <div class="fondo">
       <div v-if="!loading">
+        <div class="texto">
+          <p>
+            En esta opcion se haran copys para tus publicaciones <br />
+            de manera acertiva y efectiva, porfavor pon en la caja <br />
+            de texto de una a 5 palabras claves que creas necesarias para <br />
+            realizar el copy de tu agrado <br />
+          </p>
+        </div>
         <form action="">
           <div class="form">
             <h1>ingresa el título que quieres generar</h1>
@@ -16,7 +18,7 @@
               <input type="text" v-model="texto" /><span class="barra"></span>
               <label>ingreso del texto</label>
             </div>
-
+            <h1>{{ resultado }}</h1>
             <button type="submit" @click="prueba">consultar</button>
           </div>
         </form>
@@ -25,12 +27,8 @@
         <TransitionPrincipal />
       </div>
 
-      <div v-else>
-        <h1>{{ resultado }}</h1>
-      </div>
+      <div v-else></div>
     </div>
-
-   
   </main>
 </template>
 
@@ -93,20 +91,18 @@ Web hecha con AlexCG Design, si te sirvió la plantilla por favor entra a AlexCG
 }
 
 p {
-  color:white;
-  border:solid black;
+  color: white;
+  border: solid black;
   text-align: center;
-  padding:2em 2em;
+  padding: 2em 2em;
   border-radius: 0.5em;
   width: 50%;
   font-family: var(--body-font);
   margin: 0 auto;
-  margin-top:0.5em;
+  margin-top: 0.5em;
   box-shadow: 0 0 6px 0 black;
-
 }
 
-  
 body {
   background: #fc5c7d;
   /* fallback for old browsers */
@@ -124,20 +120,23 @@ body {
 
 h1 {
   text-align: center;
-  margin: 10px 0;
-  font-weight: 800;
+  width: 100%;
+  word-wrap: break-word;
+  /* position:absolute; */
+  color: var(--gradient);
+  font-family: var(--heading-font);
 }
 
 form {
-  background:var(--blue-main);
+  background: var(--blue-main);
   width: 50%;
   padding: 10px 10px;
   border-radius: 10px;
   box-shadow: 0 0 6px 0 black;
-  margin:0 auto;
-  margin-top:0.5em;
-  color:white;
-  }
+  margin: 0 auto;
+  margin-top: 0.5em;
+  color: white;
+}
 
 .form {
   width: 100%;
@@ -152,7 +151,7 @@ form .grupo {
 input,
 textarea {
   background: none;
-  color: lightslategray;
+  color: white;
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -161,11 +160,11 @@ textarea {
   border-bottom: 1px solid var(--cyan-gradient);
   resize: none;
 }
-
+/* color mientras se esctibe */
 input:focus,
 textarea:focus {
   outline: none;
-  color: rgb(94, 93, 93);
+  color: white;
 }
 
 input:focus ~ label,
@@ -176,7 +175,7 @@ textarea:valid ~ label {
   top: -14px;
   font-size: 20px;
   font-family: var(--body-font);
-  color: var(--cyan-gradient)
+  color: var(--cyan-gradient);
 }
 
 label {
@@ -209,12 +208,7 @@ textarea:focus ~ .barra::before {
   left: 0%;
 }
 button {
-  background: #fc5c7d;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6a82fb, #fc5c7d);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--gradient);
   display: block;
   width: 100px;
   height: 40px;
