@@ -16,6 +16,8 @@
         <span class="typed"></span>
       </h1>
 
+      
+
       <!-- <a href="#" class="hero__cta"> enviar </a>  -->
     </section>
   </header>

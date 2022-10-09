@@ -1,4 +1,5 @@
 <template>
+  <h2 class="service__title">en artigence contamos con los siguientes son nuestros servicios</h2>
   <div class="services__cards">
     <div class="service__card" v-for="service in servicedata" :key="service">
       <div class="cover__service__card">
@@ -23,12 +24,19 @@ const servicedata = serviceData;
 
 <style scoped>
 .services__cards {
-  padding-top: 20px;
+  padding-top: 10px;
   width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.services_title{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--white);
 }
 
 .service__card {
