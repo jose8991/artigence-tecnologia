@@ -29,40 +29,7 @@
       }
     ]
   },
-  {
-    "titulo": "prueba",
-    "opciones": [
-      {
-        "service": "ubicacion",
-        "url": "/servicios"
-      },
-      {
-        "service": "mision y vision",
-        "url": "/historia"
-      },
-      {
-        "service": "palabras claves",
-        "url": "/palabras-claves"
-      }
-    ]
-  },
-  {
-    "titulo": "ubicacion",
-    "opciones": [
-      {
-        "service": "cline",
-        "url": "/clima"
-      },
-      {
-        "service": "historia",
-        "url": "/historia"
-      },
-      {
-        "service": "palabras claves",
-        "url": "/palabras-claves"
-      }
-    ]
-  },
+ 
   {
     "titulo": "ubicacion",
     "opciones": [

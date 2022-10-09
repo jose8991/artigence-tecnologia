@@ -12,7 +12,7 @@
     var(--cyan-gradient),
     var(--blue-gradient)
   );
-  --body-font: "Open Sans", sans-serif;
+
   --heading-font: "Raleway", sans-serif;
   --padding-container: 60px 0;
   --height:70px;

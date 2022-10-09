@@ -7,12 +7,12 @@
           <p>
             En esta opcion se haran copys para tus publicaciones <br />
             de manera acertiva y efectiva, porfavor pon en la caja <br />
-            de texto de una a 5 palabras claves que creas necesarias para <br />
+            de texto la frase clave que creas necesarias para <br />
             realizar el copy de tu agrado <br />
           </p>
         </div>
-        <form action="">
-          <div class="form">
+        <div class="contenedor-service">
+          <div class="contenedor__form">
             <h1>ingresa el título que quieres generar</h1>
             <div class="grupo">
               <input type="text" v-model="texto" /><span class="barra"></span>
@@ -21,7 +21,7 @@
             <h1>{{ resultado }}</h1>
             <button type="submit" @click="prueba">consultar</button>
           </div>
-        </form>
+        </div>
       </div>
       <div v-if="loading">
         <TransitionPrincipal />
@@ -62,10 +62,6 @@ main {
   margin: auto;
 }
 
-h1 {
-  color: black;
-}
-
 .fondo h1 {
   color: white;
   text-align: center;
@@ -76,23 +72,10 @@ h1 {
   color: white;
 }
 
-/*
-Web hecha con AlexCG Design, si te sirvió la plantilla por favor entra a AlexCG Design
-		esta plantilla es libre para usar, así como otras plantillas más que tenemos en el canal...
-		->>>> https://www.youtube.com/alexcgdesign <<<<-
-*/
-
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 p {
   color: white;
-  border: solid black;
+  box-shadow: 0px 4px 20px rgba(35, 42, 149, 0.25);
   text-align: center;
   padding: 2em 2em;
   border-radius: 0.5em;
@@ -100,22 +83,7 @@ p {
   font-family: var(--body-font);
   margin: 0 auto;
   margin-top: 0.5em;
-  box-shadow: 0 0 6px 0 black;
-}
-
-body {
-  background: #fc5c7d;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6a82fb, #fc5c7d);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  height: 650px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* box-shadow: 0 0 6px 0 black; */
 }
 
 h1 {
@@ -127,23 +95,23 @@ h1 {
   font-family: var(--heading-font);
 }
 
-form {
+.contenedor-service {
   background: var(--blue-main);
   width: 50%;
   padding: 10px 10px;
   border-radius: 10px;
-  box-shadow: 0 0 6px 0 black;
+  box-shadow: 0px 4px 20px rgba(35, 42, 149, 0.25);
   margin: 0 auto;
   margin-top: 0.5em;
   color: white;
 }
 
-.form {
+.contenedor__form {
   width: 100%;
   margin: auto;
 }
 
-form .grupo {
+.contenedor-service .grupo {
   position: relative;
   margin: 45px;
 }
@@ -221,25 +189,25 @@ button {
 }
 
 @media screen and (max-width: 1100px) {
-  form {
+  .contenedor-service {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  form {
+  .contenedor-service {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 450px) {
-  form {
+  contenedor-service {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 300px) {
-  form {
+  contenedor-service {
     width: 90%;
   }
 }
