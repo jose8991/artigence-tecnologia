@@ -1,5 +1,5 @@
 <template>
-  <h2 class="service__title">en artigence contamos con los siguientes son nuestros servicios</h2>
+ 
   <div class="services__cards">
     <div class="service__card" v-for="service in servicedata" :key="service">
       <div class="cover__service__card">
