@@ -1,5 +1,7 @@
 <template>
-    <body>
+    <html>
+        <body>
+        
     <div class="about-section">
         <div class="inner-container">
             <h1>About Us</h1>
@@ -18,11 +20,11 @@
 </template>
 
 <script>
-
+    
 </script>
 
-<style  scoped>
-*{
+<style scope>
+    *{
     margin: 0;
     padding: 0;
     font-family: "Open Sans",sans-serif;
@@ -30,7 +32,7 @@
 }
 
 body{
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     display: flex;
     align-items: center;
     justify-content: center;
