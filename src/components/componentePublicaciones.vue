@@ -4,10 +4,7 @@
     <div class="fondo">
       <div v-if="!loading">
         <h1>
-          artigencetecnologia es una aplicación de inteligencia artificial
-          aplicada a la generación de contenidos en la cual su algoritmo
-          inteligente crea contenido único y de calidad al simular la manera en
-          que lo haría un cerebro humano.
+          ingresa el título que quieres generar
         </h1>
         <input type="text" class="fondo__input" v-model="texto" />
         <button @click="prueba" class="btn btn-primary mt-4" type="submit">
