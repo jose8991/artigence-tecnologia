@@ -30,13 +30,10 @@
 
 
 .container__all{
-    padding-top: 10px;
-  width: 100%;
-  margin:0px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    position: relative;
+    right: 0;
     transition: all 300ms;
+    justify-content: right;
 }
 
 
@@ -55,7 +52,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-   
 
     /* background-image: url(../images/background-cover.svg);p */
     background-size: cover;
@@ -63,10 +59,13 @@
 }
 
 .cover .container__info{
-
-    max-width: 400px;
-    margin-top: 40px;
+    max-width: 500px;
+    margin-top: 35px;
     z-index: 2;
+    justify-content: space-between;
+    margin-bottom: ;
+    
+
 }
 
 .cover h1{
@@ -74,6 +73,7 @@
     font-size: 60px;
     font-weight: 900;
     color: #373737;
+    justify-content: space-between;
 }
 
 .cover h2{
@@ -81,6 +81,7 @@
     font-weight: 900;
     color: #FEBA0B;
     margin-top: -30px;
+    justify-content: space-between;
 }
 
 .cover p{
@@ -100,24 +101,31 @@
     box-shadow: 1px 1px 30px -5px #20202049;
     cursor: pointer;
     transition: box-shadow 500ms;
+    justify-content: space-between;
 }
 
 .cover input[type="button"]:hover{
     box-shadow: 1px 1px 30px -5px #20202085;
+    justify-content: right;
 }
 
 
 .container__vector{
     position: relative;
+    justify-content:right;
+    
+    
 }
 
 .container__vector .img{
-    position: absolute;
+    position: relative;
     bottom: 10px;
     right: 0px;
-    width: 1000px;
+    width: 400px;
     animation: move_vector 6s ease-in-out infinite;
     transition: all 300ms;
+    justify-content: space-between;
+    margin: 0rem;
 }
 
 @keyframes move_vector {
