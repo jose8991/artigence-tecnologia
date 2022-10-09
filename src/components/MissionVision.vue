@@ -1,103 +1,160 @@
 <template>
-     <body>
-    <div class="about-section">
-      <div class="inner-container">
-        <h1>About Us</h1>
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          velit ducimus, enim inventore earum, eligendi nostrum pariatur
-          necessitatibus eius dicta a voluptates sit deleniti autem error eos
-          totam nisi neque voluptates sit deleniti autem error eos totam nisi
-          neque.
-        </p>
-        <div class="skills">
-          <span>Web Design</span>
-          <span>Photoshop & Illustrator</span>
-          <span>Coding</span>
+  <div class="container">
+    <div class="card">
+      <div class="left-column background1-left-column">
+        <h6>Control de versiones</h6>
+        <h2>GitHub</h2>
+        <i class="fa fa-github"></i>
+      </div>
+
+      <div class="right-column">
+        <div>
+          <h4>Dificultad</h4>
+          <h6>Baja - Media</h6>
         </div>
+        <h2>Aprende GitHub en 3 semanas</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+          sintLorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+          sint??
+        </p>
+        <button class="button background1-left-column">Empezar</button>
       </div>
     </div>
-  </body>
+
+    <div class="card">
+      <div class="left-column background2-left-column">
+        <h6>Programación</h6>
+        <h2>Android</h2>
+        <i class="fa fa-android" aria-hidden="true"></i>
+      </div>
+
+      <div class="right-column">
+        <div>
+          <h4>Dificultad</h4>
+          <h6>Media - Alta</h6>
+        </div>
+        <h2>Flutter en 1 año</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+          sintLorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+          sint??
+        </p>
+        <button class="button background2-left-column">Empezar</button>
+      </div>
+    </div>
+  </div>
 </template>
 
-<script>
+<script></script>
 
-</script>
+<style scoped>
 
-<style  scoped>
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  box-sizing: border-box;
+
+.background1-left-column{
+	background: linear-gradient(180deg,#21c8f6,#637bff);
 }
+
+
+.background2-left-column{
+	background: linear-gradient(180deg ,#6edcc4,#1aab8b);
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: none;
+}
+
 
 body {
-  /*min-height: 100vh;*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1f1f1;
+	font-family: Arial, Helvetica, sans-serif;	
 }
 
-.about-section {
-  background: url('@/assets/images_new_project/logo-no-background.png') no-repeat left;
-  background-size: 55%;
-  background-color: #fdfdfd;
-  overflow: hidden;
-  padding: 100px 0;
+.container{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+    align-items: center;
 }
 
-.inner-container {
-  width: 55%;
-  float: right;
-  background-color: #fdfdfd;
-  padding: 150px;
+.card {
+	background-color:var(--white-text);
+	border-radius: 1rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+	display: flex;	
+	margin: 1.5rem;
+	overflow: hidden;
+	width: 30rem;
+	height: 19rem;
 }
 
-.inner-container h1 {
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 900;
+.card h6 {
+	opacity: 0.6;	
+	letter-spacing: .1rem;
+	text-transform: uppercase;
 }
 
-.text {
-  font-size: 13px;
-  color: #545454;
-  line-height: 30px;
-  text-align: justify;
-  margin-bottom: 40px;
+.card  h2 {
+	letter-spacing: .1rem;
+	margin: 1rem 0;
+	color: var(black-text);
 }
 
-.skills {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  font-size: 13px;
+.left-column {	
+	color: var(--white-text);
+	padding: 2rem;
+	max-width: 10rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
-  .inner-container {
-    padding: 80px;
+.left-column h2{
+	color: var(--white-text);
+}
+
+.left-column i {
+	font-size: 5rem
+}
+
+.right-column {
+	padding: 30px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+	
+}
+
+.right-column p{	
+	font-size: .9rem;
+	color: var(--black-text)
+}
+
+.button {
+	border-radius: 3rem;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: var(--white-text);
+	font-size: 1.2rem;
+	padding: .8rem 1.5rem;
+	letter-spacing: .1rem;
+	align-self: flex-end;
+}
+
+/*media queries*/
+
+@media (max-width: 1030px) {
+	.container{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:auto;
+	}
   }
-}
-
-@media screen and (max-width: 1000px) {
-  .about-section {
-    background-size: 100%;
-    padding: 100px 40px;
-  }
-  .inner-container {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .about-section {
-    padding: 0;
-  }
-  .inner-container {
-    padding: 60px;
-  }
-}
 </style>
