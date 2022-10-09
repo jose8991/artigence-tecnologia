@@ -30,8 +30,12 @@
 
 
 .container__all{
-    position: relative;
-    right: 0;
+    padding-top: 10px;
+  width: 100%;
+  margin:0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
     transition: all 300ms;
 }
 
@@ -51,6 +55,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+   
 
     /* background-image: url(../images/background-cover.svg);p */
     background-size: cover;
@@ -58,6 +63,7 @@
 }
 
 .cover .container__info{
+
     max-width: 400px;
     margin-top: 40px;
     z-index: 2;
@@ -109,7 +115,7 @@
     position: absolute;
     bottom: 10px;
     right: 0px;
-    width: 600px;
+    width: 1000px;
     animation: move_vector 6s ease-in-out infinite;
     transition: all 300ms;
 }

@@ -81,6 +81,7 @@ body {
 	justify-content: center;
 	height: 100vh;
     align-items: center;
+    background-color: var(--blue-main);
 }
 
 .card {
@@ -98,12 +99,13 @@ body {
 	opacity: 0.6;	
 	letter-spacing: .1rem;
 	text-transform: uppercase;
+  color: red;
 }
 
 .card  h2 {
 	letter-spacing: .1rem;
 	margin: 1rem 0;
-	color: var(black-text);
+	color: red;
 }
 
 .left-column {	
@@ -117,7 +119,7 @@ body {
 }
 
 .left-column h2{
-	color: var(--white-text);
+	color: red;
 }
 
 .left-column i {
@@ -136,7 +138,7 @@ body {
 
 .right-column p{	
 	font-size: .9rem;
-	color: var(--black-text)
+	color: red;
 }
 
 .button {

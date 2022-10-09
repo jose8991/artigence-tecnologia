@@ -4,12 +4,12 @@
     <div class="fondo">
       <div v-if="!loading">
         <div class="texto">
-          <p>
+          <h2>
             En esta opcion se haran copys para tus publicaciones <br />
             de manera acertiva y efectiva, porfavor pon en la caja <br />
             de texto la frase clave que creas necesarias para <br />
             realizar el copy de tu agrado <br />
-          </p>
+          </h2>
         </div>
         <div class="contenedor-service">
           <div class="contenedor__form">
@@ -65,6 +65,11 @@ main {
 .fondo h1 {
   color: white;
   text-align: center;
+ 
+  width: 100%;
+  word-wrap: break-word;
+  color: var(--gradient);
+  font-family: var(--heading-font);
 }
 
 .fondo__input {
@@ -73,7 +78,7 @@ main {
 }
 
 
-p {
+.texto {
   color: white;
   box-shadow: 0px 4px 20px rgba(35, 42, 149, 0.25);
   text-align: center;
@@ -86,14 +91,6 @@ p {
   /* box-shadow: 0 0 6px 0 black; */
 }
 
-h1 {
-  text-align: center;
-  width: 100%;
-  word-wrap: break-word;
-  /* position:absolute; */
-  color: var(--gradient);
-  font-family: var(--heading-font);
-}
 
 .contenedor-service {
   background: var(--blue-main);
