@@ -2,21 +2,22 @@
   <div class="container">
     <div class="card">
       <div class="left-column background1-left-column">
-        <h6>Control de versiones</h6>
-        <h2>GitHub</h2>
-        <i class="fa fa-github"></i>
+        <h6>Acerca de Nosotros</h6>
+        <h2>Misión</h2>
+        <!--<i class="fa fa-github"></i>-->
       </div>
 
       <div class="right-column">
         <div>
-          <h4>Dificultad</h4>
-          <h6>Baja - Media</h6>
+          <h4>Artigence</h4>
+          <h6>Tecnologia</h6>
         </div>
-        <h2>Aprende GitHub en 3 semanas</h2>
+        <h2>Nosotros</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
-          sintLorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
-          sint??
+          Ayudar a las personas para que <br>
+          puedan realizar actividades de una <br>
+           manera mas eficiente y facil por <br>
+           medio de la Inteligencia Artificial.
         </p>
         <button class="button background1-left-column">Empezar</button>
       </div>
@@ -24,21 +25,22 @@
 
     <div class="card">
       <div class="left-column background2-left-column">
-        <h6>Programación</h6>
-        <h2>Android</h2>
-        <i class="fa fa-android" aria-hidden="true"></i>
+        <h6>Acerca de Nosotros</h6>
+        <h2>Visión</h2>
+        <!--<i class="fa fa-android" aria-hidden="true"></i>--> 
       </div>
 
       <div class="right-column">
         <div>
-          <h4>Dificultad</h4>
-          <h6>Media - Alta</h6>
+          <h4>Artigence</h4>
+          <h6>TECNOLOGIA</h6>
         </div>
-        <h2>Flutter en 1 año</h2>
+        <h2>Nosotros</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
-          sintLorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
-          sint??
+          Ser reconocidos por ayudar con actividaddes <br>
+           a personas en sus labores cotifianas de marketign <br>
+           a los padres a poder realizar actividades con sus hijos <br>
+           de manera mas facil.
         </p>
         <button class="button background2-left-column">Empezar</button>
       </div>
@@ -68,12 +70,11 @@
 	text-decoration: none;
 	box-sizing: border-box;
 	border: none;
-  /*background: var(--blue-footer);*/
-}
+  }
 
 
 body {
-	font-family: Arial, Helvetica, sans-serif;	
+	font-family: var(--body-text);	
 }
 
 .container{
@@ -91,35 +92,41 @@ body {
 	display: flex;	
 	margin: 1.5rem;
 	overflow: hidden;
-	width: 30rem;
-	height: 19rem;
-}
+	width: 40rem;
+	height: 30rem;
+ }
 
 .card h6 {
 	opacity: 0.6;	
 	letter-spacing: .1rem;
 	text-transform: uppercase;
-  color: red;
+  color:var(--blue-main);
 }
 
 .card  h2 {
 	letter-spacing: .1rem;
 	margin: 1rem 0;
-	color: red;
+	color:var(--blue-main);
+ 
 }
 
 .left-column {	
-	color: var(--white-text);
+	color: var(--blue-main);
 	padding: 2rem;
 	max-width: 10rem;
 	display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width:100rem;
+    height: 100%;
+    font-size:x-large
+    text-aling:star;
+
 }
 
 .left-column h2{
-	color: red;
+	color: var(--blue-main);
 }
 
 .left-column i {
@@ -130,25 +137,34 @@ body {
 	padding: 30px;
 	width: 100%;
 	display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width:65;
+  height: 50%;
 	
 }
 
 .right-column p{	
 	font-size: .9rem;
-	color: red;
+	color: var(--blue-main);
+  
 }
 
 .button {
 	border-radius: 3rem;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	color: var(--white-text);
+	color: var(--blue-main);
 	font-size: 1.2rem;
 	padding: .8rem 1.5rem;
 	letter-spacing: .1rem;
-	align-self: flex-end;
+	align-self:right;
+  align-content:flex-end;
+  float: inline-end;
+  margin:220px;
+
+  
+
 }
 
 /*media queries*/
