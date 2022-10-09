@@ -94,6 +94,7 @@
  
 * {
     box-sizing: border-box;
+    
 }
 body {
   display: flex;
@@ -107,7 +108,8 @@ body {
   background: var(--blue-main);
   color:white;
   line-height: 1.6;
-  padding: 0 1.5em;
+  padding: 0 1.5em;  
+  height: 100vh;
  
 }
 html {
@@ -117,6 +119,7 @@ html {
   height: 100%;
   background: var(--blue-main);
   background-blend-mode: luminosity;
+  
 }
 header {
   margin: 1rem;
@@ -132,8 +135,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
-    
-}
+    }
 
 
 
@@ -169,25 +171,30 @@ ul {
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 
 .contact-form form label {
     display: block;
+    
 }
 
 .contact-form form p {
     margin: 0;
     padding: 1em;
+
 }
 
 .contact-form form .block {
     grid-column: 1 / 3;
+    
 }
 
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
     width: 100%;
+    height: 50px;
     padding: .7em;
     border: none;
     background: none;
@@ -204,6 +211,7 @@ ul {
     text-transform: uppercase;
     padding: 1em;
     color:white;
+    
 }
 
 .contact-form form button:hover,
@@ -212,12 +220,13 @@ ul {
     color: var(--blue-footer);
     transition: background-color 1s ease-out;
     outline: 1;
+    
 }
 
 /* CONTACT INFO */
 .contact-info {
     background: var(--blue-footer);
-    
+   
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
