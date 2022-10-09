@@ -1,7 +1,60 @@
 <template>
   <body>
-    <header>Resize the damn window</header>
-    <article>
+    <div class="content">
+
+<h1 class="logo">Contactanos <br><span class="name">Artigence</span></h1>
+
+<div class="contact-wrapper animated bounceInUp">
+    <div class="contact-form">
+        <h3>Completa los Datos</h3>
+        <form action="">
+            <p>
+                <label>Nombre Completo</label>
+                <input type="text" name="fullname">
+            </p>
+            <p>
+                <label>Correo Electronico</label>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label>Numero celular</label>
+                <input type="tel" name="phone">
+            </p>
+            <p>
+                <label>Whatsaap</label>
+                <input type="text" name="affair">
+            </p>
+            <p class="block">
+               <label>Observaciones</label> 
+                <textarea name="message" rows="3"></textarea>
+            </p>
+            <p class="block">
+                <button>
+                    Enviar
+                </button>
+            </p>
+        </form>
+    </div>
+    <div class="contact-info">
+        <h2>Nuestra Información</h2>
+        <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Risaralda,Dosquebradas <br>
+                        Laureles2 manzan8 casa2 <br>
+                        C.P 661002</li>
+            <li><i class="fas fa-phone"></i>+57 318 634 71 37 <br> +57 301 573 04 64</li>
+            <li><i class="fas fa-envelope-open-text"></i>artigencei@gmail.com</li>
+        </ul>
+        <p>
+          ¡Trabajemos Juntos! <br>
+          Si deseas consultar mayor información sobre nuestros servicios o tienes alguna duda 
+          al respecto, no dudes en llenar el cuestionario y nos contactaremos con usted</p>
+        <p>artignence.com</p>
+    </div>
+</div>
+
+</div>
+<!--
+      <article>
       <h3>Yogi Bear</h3>
       <section>
         <p>Smaaaarter than the average bear!</p>
@@ -28,14 +81,35 @@
         <p>Stole a picnic basket?! Yogiii!!!</p>
         <a href="#">go</a>
       </section>
-    </article>
+    </article>-->
   </body>
+  
 </template>
 
 <script></script>
 
-<style scoped>
 
+<style scoped>
+  
+ 
+ * {
+    box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1 auto;
+  padding-top: 4em;
+  /*max-width: 1000px;*/
+  font: 1em/1.5 trebuchet ms, verdana, sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  background: var(--blue-main);
+  color:white;
+  line-height: 1.6;
+  padding: 0 1.5em;
+ 
+}
 html {
   --i: -1;
   --j: -1;
@@ -44,17 +118,6 @@ html {
   background: var(--blue-main);
   background-blend-mode: luminosity;
 }
-
-body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  padding-top: 4em;
-  max-width: 1000px;
-  font: 1em/1.5 trebuchet ms, verdana, sans-serif;
-}
-
 header {
   margin: 1rem;
   padding: 1em 0;
@@ -62,30 +125,148 @@ header {
   min-width: 95%;
   background: #fff;
   text-align: center;
+  
+}
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    
 }
 
-article {
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span {
+    color: var(--blue-footer);
+}
+
+.contact-wrapper {
+    box-shadow: 0 00 020px black;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: white;
+    border: inset lightcyan;
+    color:#0f414c;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color:#0f414c;
+    border-bottom: 1px solid var(--blue-main);
+    border-radius: 20em;
+
+}
+
+.contact-form form button {
+    background: var(--blue-footer);
+    border: 1;
+    text-transform: uppercase;
+    padding: 1em;
+    color:white;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background:var(--cyangradient);
+    color: var(--blue-footer);
+    transition: background-color 1s ease-out;
+    outline: 1;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: var(--blue-footer);
+    
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+/* article {
   overflow: hidden;
   margin: 1rem;
   width: 21em;
   min-width: 15rem;
-  border-radius: 1em;
+  border-radius: 3em;
+  border: solid var(--blue-gradient);
 }
 article:nth-of-type(1) {
   --c0: #0f414c;
   --c1: #79e9fd;
 }
 article:nth-of-type(2) {
-  --c0: #673a01;
-  --c1: #ddac43;
+  --c0: #0f414c;
+  --c1: #79e9fd;
 }
 article:nth-of-type(3) {
-  --c0: #291c52;
-  --c1: #bba9ff;
+  --c0: #0f414c;
+  --c1: #79e9fd;
 }
 article:nth-of-type(4) {
-  --c0: #36480c;
-  --c1: #b0d65f;
+  --c0: #0f414c;
+  --c1: #79e9fd;
 }
 
 h3,
@@ -197,5 +378,5 @@ a:after {
     padding-right: calc(0.5 * (1 + var(--i)) * (var(--r) - 1rem) + 0.5rem);
     padding-left: calc(0.5 * (1 - var(--i)) * (var(--r) - 1rem) + 0.5rem);
   }
-}
+}*/
 </style>
