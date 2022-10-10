@@ -3,13 +3,12 @@
       <div class="cover">
         <div class="container__cover">
           <div class="container__info">
-            <h1>BUILD YOUR</h1>
-            <h2>BUSINESS</h2>
+            <h1>TECNOLOGIA</h1>
+            <h2>ARTIGENCE</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              molestias cumque at, impedit eum corrupti libero ipsam placeat,
-              nulla, maiorepruebaistinctio. Velit, distinctio. Iste
-              iusto deserunt esse?
+                podra realizar copys para sus publicaciones,
+                resumenes de libros para todas las necesidades,
+                podra ayudarse en textos para realizar los campos que requiera
             </p>
             <input type="button" value="Get Started" />
           </div>
@@ -63,21 +62,21 @@
 
 .cover h1{
     max-width: 400px;
-    font-size: 60px;
+    font-size: 2.5rem;
     font-weight: 900;
-    color: #373737;
+    color:var(--blue-intro);
 }
 
 .cover h2{
-    font-size: 60px;
+    font-size: 3rem;
     font-weight: 900;
-    color: #FEBA0B;
+    color:var(--blue-gradient);
     margin-top: -30px;
 }
 
 .cover p{
     margin-top: 10px;
-    color: #373737;
+    color:var(--white);
 }
 
 .cover input[type="button"]{
@@ -87,7 +86,7 @@
     font-weight: 600;
     border: none;
     color: white;
-    background: #FEBA0B;
+    background:var(--blue-gradient);
     border-radius: 20px;
     box-shadow: 1px 1px 30px -5px #20202049;
     cursor: pointer;
