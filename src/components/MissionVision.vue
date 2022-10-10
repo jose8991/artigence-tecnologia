@@ -17,7 +17,8 @@
           Ayudar a las personas para que <br>
           puedan realizar actividades de una <br>
            manera mas eficiente y facil por <br>
-           medio de la Inteligencia Artificial.
+           medio de la Inteligencia Artificial <br>
+           haciendo la vida mas facil.
         </p>
         <button class="button background1-left-column">Empezar</button>
       </div>
@@ -37,10 +38,11 @@
         </div>
         <h2>Nosotros</h2>
         <p>
-          Ser reconocidos por ayudar con actividaddes <br>
-           a personas en sus labores cotifianas de marketign <br>
-           a los padres a poder realizar actividades con sus hijos <br>
-           de manera mas facil.
+          Ser reconocidos por ayudar con <br>
+          actividaddes a personas en sus labores<br>
+          cotifianas de marketign a los padres a <br>
+          poder realizar actividades con sus hijos <br>
+          de manera mas facil.
         </p>
         <button class="button background2-left-column">Empezar</button>
       </div>
@@ -120,8 +122,7 @@ body {
     justify-content: space-between;
     width:100rem;
     height: 100%;
-    font-size:x-large
-    
+    font-size:x-large;
 
 }
 
@@ -130,7 +131,7 @@ body {
 }
 
 .left-column i {
-	font-size: 5rem
+	font-size: 5rem;
 }
 
 .right-column {
@@ -146,7 +147,7 @@ body {
 }
 
 .right-column p{	
-	font-size: .9rem;
+	font-size: 1.6rem;
 	color: var(--white-text);
 }
 
@@ -165,8 +166,7 @@ body {
 	letter-spacing: .1rem;
 	align-self:right;
   align-content:flex-end;
-  float: inline-end;
-  margin:220px;
+  margin:150px;
 
   
 
@@ -181,5 +181,5 @@ body {
 		align-items: center;
 		height:auto;
 	}
-}
+  }
 </style>
