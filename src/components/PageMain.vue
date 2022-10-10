@@ -9,7 +9,7 @@
       <CommentCard />
       <SecundaryContact />
     </main>
-    <MainFooter />
+    <!-- <MainFooter /> -->
   </div>
 </template>
 
@@ -21,7 +21,7 @@ import AbautCards from "@/components/OrganismsPageMain/AbautCards.vue";
 import MainService from "@/components/OrganismsPageMain/MainService.vue";
 import CommentCard from "@/components/OrganismsPageMain/CommentCard.vue";
 import SecundaryContact from "@/components/OrganismsPageMain/SecundaryContact.vue";
-import MainFooter from "@/components/OrganismsPageMain/MainFooter.vue";
+// import MainFooter from "@/components/OrganismsPageMain/MainFooter.vue";
 </script>
 
 <style scoped>

@@ -6,7 +6,7 @@
             <h1>TECNOLOGIA</h1>
             <h2>ARTIGENCE</h2>
             <p>
-                podra realizar copys para sus publicaciones,
+              podra realizar copys para sus publicaciones,
                 resumenes de libros para todas las necesidades,
                 podra ayudarse en textos para realizar los campos que requiera
             </p>
@@ -61,10 +61,10 @@
 }
 
 .cover h1{
-    max-width: 400px;
-    font-size: 2.5rem;
+    max-width: 10px;
+    font-size: 2.9rem;
     font-weight: 900;
-    color:var(--blue-intro);
+    color: #373737;
 }
 
 .cover h2{
@@ -76,7 +76,7 @@
 
 .cover p{
     margin-top: 10px;
-    color:var(--white);
+    color: #373737;
 }
 
 .cover input[type="button"]{
@@ -86,7 +86,7 @@
     font-weight: 600;
     border: none;
     color: white;
-    background:var(--blue-gradient);
+    background: var(--blue-gradient);
     border-radius: 20px;
     box-shadow: 1px 1px 30px -5px #20202049;
     cursor: pointer;
