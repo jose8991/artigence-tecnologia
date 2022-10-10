@@ -1,5 +1,5 @@
 <template>
-  <body>
+  <div class="contenedor">
     <MainNavar />
     <MainHeader />
     <main class="main">
@@ -10,7 +10,7 @@
       <SecundaryContact />
     </main>
     <MainFooter />
-  </body>
+  </div>
 </template>
 
 <script setup>
@@ -27,7 +27,7 @@ import MainFooter from "@/components/OrganismsPageMain/MainFooter.vue";
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 
-body {
+.contenedor {
   font-family: var(--body-font);
   background-color: var(--blue-main);
 }
