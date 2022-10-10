@@ -155,7 +155,7 @@
   color: #fff;
   border: 1px solid;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .footer__media--last {
