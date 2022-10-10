@@ -7,7 +7,7 @@
             <img src="@/assets/images_new_project/logo-no-background.png" alt="">
         </div>
         <div class="terms">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+            <p>La era digital en nuestra tecnologia de inteligencia artificial ayudara a ser facil la vida de muchas personas.</p>
         </div>
     </div>
     <div class="box__footer">

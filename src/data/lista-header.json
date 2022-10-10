@@ -7,12 +7,12 @@
         "url": "/publicaciones"
       },
       {
-        "service": "historia",
-        "url": "/historia"
+        "service": "historias",
+        "url": "/historias"
       },
       {
-        "service": "palabras claves",
-        "url": "/palabras-claves"
+        "service": "listas",
+        "url": "/listas"
       }
     ]
   },

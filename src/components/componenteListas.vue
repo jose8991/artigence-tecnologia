@@ -5,15 +5,16 @@
       <div v-if="!loading">
         <div class="texto">
           <h2>
-            En esta opcion se haran copys para tus publicaciones <br />
-            de manera acertiva y efectiva, porfavor pon en la caja <br />
-            de texto la frase clave que creas necesarias para <br />
-            realizar el copy de tu agrado <br />
+            En esta opcion se hara una lista<br />
+            de un tema especifico de manera acertiva y efectiva,
+            porfavor pon en la caja <br />
+            de texto la lista a <br />
+            generar <br />
           </h2>
         </div>
         <div class="contenedor-service">
           <div class="contenedor__form">
-            <h1>ingresa el título que quieres generar</h1>
+            <h1>ingresa el tema de la lista a generar</h1>
             <div class="grupo">
               <input type="text" v-model="texto" /><span class="barra"></span>
               <label>ingreso del texto</label>
@@ -44,7 +45,7 @@ let loading = ref(false);
 async function prueba() {
   loading.value = true;
   let post = ref({
-    tipo: "publicacion",
+    tipo: "lista",
     contenido: texto.value,
   });
   const response = await postPost(post.value);

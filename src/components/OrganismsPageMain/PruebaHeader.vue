@@ -10,7 +10,7 @@
                 resumenes de libros para todas las necesidades,
                 podra ayudarse en textos para realizar los campos que requiera
             </p>
-            <input type="button" value="Get Started" />
+            <!-- <input type="button" value="Get Started" /> -->
           </div>
           <div class="container__vector">
             <lottie-player class="img" src="https://lottie.host/c724746c-60b6-4611-95ac-37f509c8ea34/6bBWke5qy8.json" background="transparent" speed="1" loop autoplay></lottie-player>
@@ -64,7 +64,7 @@
     max-width: 10px;
     font-size: 2.9rem;
     font-weight: 900;
-    color: #373737;
+    color: var(--cyan-gradient);
 }
 
 .cover h2{
@@ -76,7 +76,9 @@
 
 .cover p{
     margin-top: 10px;
-    color: #373737;
+    color: white;
+    font-size: 30px;
+
 }
 
 .cover input[type="button"]{

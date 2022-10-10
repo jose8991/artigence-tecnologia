@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import VistaPrincipal from "../views/VistaPrincipal.vue";
 import ServicioPublicacion from "../views/ServicioPublicaciones.vue";
+import ServicioHistorias from "../views/ServicioHistoria.vue";
+import ServicioLista from "../views/ServicioLista.vue";
 import RegisterAndLogin from "../views/RegisterLogin.vue";
 import ContactMain from "../views/ContactMain.vue";
 import MissionVision from "../views/MissionVision.vue";
@@ -28,6 +30,14 @@ const routes = [
     path: "/historia",
     component: MissionVision,
   },
+  {
+    path: "/historias",
+    component: ServicioHistorias,
+  },
+  {
+    path: "/listas",
+    component: ServicioLista,
+  }
 ];
 
 const router = createRouter({
