@@ -1,189 +1,127 @@
 <template>
-  <footer class="footer">
-    <section class="footer__container container">
-      <img
-        src="@/assets/images_new_project/logo-no-background.png"
-        class="footer__logo"
-      />
+   <footer>
 
-      <div class="footer__items">
-        <p class="footer__contact footer__contact--first">
-          <img
-            src="@/assets/images_new_project/icon-location.svg"
-            class="footer__icon"
-          />
-          Risaralda,Dosquebradas <br />
-          Laureles2 manzan8 casa2 <br />
-          C.P 661002
-        </p>
-
-        <div class="footer__content">
-          <p class="footer__contact footer__contact--second">
-            <img
-              src="@/assets/images_new_project/whatsapp.svg"
-              class="footer__icon"
-            />
-            +57 318 634 71 37 <br />
-            +57 301 573 04 64
-          </p>
-
-          <div class="footer__location">
-            <p class="footer__contact">
-              <img
-                src="@/assets/images_new_project/gmail.svg"
-                class="footer__icon"
-              />
-              artigencei@gmail.com
-            </p>
-          </div>
+<div class="container__footer">
+    <div class="box__footer">
+        <div class="logo">
+            <img src="@/assets/images_new_project/logo-no-background.png" alt="">
         </div>
-
-        <nav class="footer__nav">
-          <a href="#" class="footer__link">Terminos y condiciones</a>
-          <a href="#" class="footer__link">Acerca de Nosotros</a>
-          <a href="#" class="footer__link">Comentarios</a>
-        </nav>
-
-        <nav class="footer__nav">
-          <a href="#" class="footer__link">Contactenos</a>
-          <a href="#" class="footer__link">Servicios</a>
-          <a href="#" class="footer__link">Soporte</a>
-        </nav>
-
-        <div class="footer__social">
-          <a href="#" class="footer__media"
-            ><img src="@/assets/images_new_project/fb.svg" class="footer__img"
-          /></a>
-          <a href="#" class="footer__media"
-            ><img
-              src="@/assets/images_new_project/twitter.svg"
-              class="footer__img"
-          /></a>
-          <a href="#" class="footer__media footer__media--last"
-            ><img
-              src="@/assets/images_new_project/instagram.svg"
-              class="footer__img"
-          /></a>
+        <div class="terms">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
         </div>
-      </div>
-    </section>
-  </footer>
+    </div>
+    <div class="box__footer">
+        <h2>Soluciones</h2>
+        <a href="https://www.google.com">App Desarrollo</a>
+        <a href="#">App Marketing</a>
+        <a href="#">IOS Desarrollo</a>
+        <a href="#">Android Desarrollo</a>
+    </div>
+
+    <div class="box__footer">
+        <h2>Compañia</h2>
+        <a href="#">Acerca de</a>
+        <a href="#">Trabajos</a>
+        <a href="#">Procesos</a>
+        <a href="#">Servicios</a>              
+    </div>
+
+    <div class="box__footer">
+        <h2>Redes Sociales</h2>
+        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+    </div>
+
+</div>
+
+<div class="box__copyright">
+    <hr>
+    <p>Todos los derechos reservados © 2022 <b>ARTIGENCETECNOLOGIA</b></p>
+</div>
+</footer>
+
 </template>
 
 <script></script>
 
 <style scoped>
-.nav {
-  display: flex;
-  align-items: center;
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    /* *background-image: url('@/assets/images_new_project/background-footer.svg'); */
+    *background-size: cover;
+    
+    background-color:var(--blue-footer);
+    /* -webkit-mask-image: url('@/assets/images_new_project/background-footer.svg');
+    mask-image: url('@/assets/images_new_project/background-footer.svg'); */
+    /* -webkit-mask-size: cover;
+    mask-size: cover; */
 }
 
-.nav__logo {
-  width: 100px;
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.nav__img {
-  width: 100%;
-  display: block;
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
 }
 
-.nav__link {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  margin-left: 0.8em;
+.box__footer .logo img{
+    width: 180px;
 }
 
-.nav__link:first-of-type {
-  margin-left: auto;
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
 }
 
-.footer {
-  background-color: var(--blue-footer);
-  color: #fff;
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
 }
 
-.footer__items {
-  display: grid;
-  gap: 1em;
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
 }
 
-.footer__logo {
-  width: 150px;
-  display: block;
-  margin-bottom: 2em;
+.box__footer a:hover{
+    opacity: 0.8;
 }
 
-.footer__contact {
-  display: flex;
-  align-items: flex-start;
-  gap: 5px;
+.box__footer a .fab{
+    font-size: 20px;
 }
 
-.footer__contact--second {
-  margin-bottom: 1em;
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
 }
 
-.footer__icon {
-  margin-top: 0px;
-  width: 35px;
-  height: 35px;
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
 }
 
-.footer__nav {
-  margin-top: 2.5em;
-  display: grid;
-  gap: 0.8em;
-}
-
-.footer__link {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer__social {
-  margin-top: 2em;
-  margin: 0 auto;
-}
-
-.footer__media {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  border: 1px solid;
-  border-radius: 50%;
-  margin-right: 0px;
-}
-
-.footer__media--last {
-  margin-right: 0;
-  width: 40px;
-  height: 40px;
-}
-
-@media (min-width: 740px) {
-  .footer__items {
-    grid-template-columns: 2fr 1fr max-content max-content 1fr;
-    gap: 2em;
-  }
-
-  .footer__nav {
-    margin-top: 0;
-  }
-
-  .footer__media {
-    margin-bottom: 1em;
-  }
-
-  .footer__social {
-    margin-top: 0em;
-  }
-
-  .footer__media--last {
-    margin-right: 0;
-  }
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
 }
 </style>

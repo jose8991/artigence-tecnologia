@@ -65,17 +65,12 @@ main {
 .fondo h1 {
   color: white;
   text-align: center;
- 
   width: 100%;
   word-wrap: break-word;
   color: var(--gradient);
   font-family: var(--heading-font);
 }
 
-.fondo__input {
-  background: var(--blue-main);
-  color: white;
-}
 
 
 .texto {
@@ -94,7 +89,7 @@ main {
 
 .contenedor-service {
   background: var(--blue-main);
-  width: 50%;
+  width: 80%;
   padding: 10px 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(35, 42, 149, 0.25);
@@ -113,8 +108,7 @@ main {
   margin: 45px;
 }
 
-input,
-textarea {
+input{
   background: none;
   color: white;
   font-size: 18px;
@@ -125,11 +119,11 @@ textarea {
   border-bottom: 1px solid var(--cyan-gradient);
   resize: none;
 }
-/* color mientras se esctibe */
+
 input:focus,
 textarea:focus {
   outline: none;
-  color: white;
+  color: blue;
 }
 
 input:focus ~ label,
