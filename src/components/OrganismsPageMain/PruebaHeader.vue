@@ -8,7 +8,7 @@
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               molestias cumque at, impedit eum corrupti libero ipsam placeat,
-              nulla, maiores totam qui ea distinctio. Velit, distinctio. Iste
+              nulla, maiorepruebaistinctio. Velit, distinctio. Iste
               iusto deserunt esse?
             </p>
             <input type="button" value="Get Started" />
