@@ -120,8 +120,7 @@ body {
     justify-content: space-between;
     width:100rem;
     height: 100%;
-    font-size:x-large
-    text-aling:star;
+    font-size:x-large;
 
 }
 
