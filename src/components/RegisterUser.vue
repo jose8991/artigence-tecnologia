@@ -118,7 +118,7 @@ setTimeout(() => {
 main {
   background: rgb(23, 25, 51);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 100px;
   margin: auto;
 }
@@ -137,7 +137,7 @@ main {
   justify-content: center;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background-color: var(--blue-main);
+  background-color: var(--blue-intro);
   border-radius: 25px;
   box-shadow: 3px 5px 5px rgb(13, 14, 36);
 }
@@ -241,7 +241,7 @@ main {
   main {
     padding-top: 20px;
     padding-bottom: 100px;
-    background: red;
+    background: var(--blue-main);
   }
 
   .contenedor__login-register {
