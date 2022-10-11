@@ -31,19 +31,11 @@
   },
  
   {
-    "titulo": "ubicacion",
+    "titulo": "prueba",
     "opciones": [
       {
-        "service": "cline",
-        "url": "/clima"
-      },
-      {
-        "service": "historia",
-        "url": "/historia"
-      },
-      {
-        "service": "palabras claves",
-        "url": "/palabras-claves"
+        "service": "iterpolacionlineal",
+        "url": "/prueba"
       }
     ]
   }

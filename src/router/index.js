@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import VistaPrincipal from "../views/VistaPrincipal.vue";
 import ServicioPublicacion from "../views/ServicioPublicaciones.vue";
 import ServicioHistorias from "../views/ServicioHistoria.vue";
+import interpolacionLineal from "../views/interpolacionLineal.vue";
 import ServicioLista from "../views/ServicioLista.vue";
 import RegisterAndLogin from "../views/RegisterLogin.vue";
 import ContactMain from "../views/ContactMain.vue";
@@ -37,7 +38,11 @@ const routes = [
   {
     path: "/listas",
     component: ServicioLista,
-  }
+  },
+  {
+    path: "/prueba",
+    component: interpolacionLineal,
+  },
 ];
 
 const router = createRouter({
