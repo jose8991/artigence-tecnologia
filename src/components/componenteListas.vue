@@ -1,7 +1,7 @@
 <template>
   <MainNavar />
   <main>
-    <div class="fondo">
+    <div class="fondo lerpw--font-size--i-2000px--30px--f-500px--15px--ends">
       <div v-if="!loading">
         <div class="texto">
           <h2>
@@ -62,7 +62,9 @@ main {
   padding-top: 100px;
   margin: auto;
 }
-
+.result{
+  font-family: var(--result-font)
+}
 .fondo h1 {
   color: white;
   text-align: center;
@@ -80,8 +82,8 @@ main {
   text-align: center;
   padding: 2em 2em;
   border-radius: 0.5em;
-  width: 50%;
-  font-family: var(--body-font);
+  width: 80%;
+  font-family: var(--result-font);
   margin: 0 auto;
   margin-top: 0.5em;
   /* box-shadow: 0 0 6px 0 black; */
@@ -91,7 +93,7 @@ main {
 .contenedor-service {
   background: var(--blue-main);
   width: 80%;
-  padding: 10px 10px;
+  padding: 2em 2em;
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(35, 42, 149, 0.25);
   margin: 0 auto;
@@ -106,7 +108,6 @@ main {
 
 .contenedor-service .grupo {
   position: relative;
-  margin: 45px;
 }
 
 input{
@@ -140,12 +141,14 @@ textarea:valid ~ label {
 
 label {
   color: var(--colorTextos);
-  font-size: 16px;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
-  left: 5px;
-  top: 10px;
+  top: 0px;
   transition: 0.5s ease all;
   pointer-events: none;
+  min-width: 300px;
+  text-align: center;
 }
 
 input:focus ~ .barra::before,
@@ -178,29 +181,5 @@ button {
   font-size: 16px;
   margin: 10px auto;
   cursor: pointer;
-}
-
-@media screen and (max-width: 1100px) {
-  .contenedor-service {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .contenedor-service {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  contenedor-service {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  contenedor-service {
-    width: 90%;
-  }
 }
 </style>

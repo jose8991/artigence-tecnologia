@@ -1,7 +1,7 @@
 <template>
   <MainNavar />
   <main>
-    <div class="fondo">
+    <div class="fondo lerpw--font-size--i-2000px--30px--f-500px--15px--ends">
       <div v-if="!loading">
         <div class="texto">
           <h2>
@@ -13,12 +13,13 @@
         </div>
         <div class="contenedor-service">
           <div class="contenedor__form">
-            <h1>ingresa el título que quieres generar</h1>
+            <h1 >ingresa el título que quieres generar</h1>
+            <br>
             <div class="grupo">
               <input type="text" v-model="texto" /><span class="barra"></span>
               <label>ingreso del texto</label>
             </div>
-            <h1 class="result">{{ resultado }}</h1>
+            <h1>{{ resultado }}</h1>
             <button type="submit" @click="prueba">consultar</button>
           </div>
         </div>
@@ -37,6 +38,8 @@ import { ref } from "vue";
 import TransitionPrincipal from "@/components/TransitionService.vue";
 import { postPost } from "@/components/modules/responseModel.js";
 import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
+import responsive_lerpw from "@/components/modules/responsive-lerpw-css.js";
+console.log(responsive_lerpw);
 let texto = ref("");
 const resultado = ref(null);
 let loading = ref(false);
@@ -51,6 +54,8 @@ async function prueba() {
   loading.value = response.recarga;
   resultado.value = response.post;
 }
+
+
 </script>
 
 <style scoped>
@@ -81,8 +86,8 @@ main {
   text-align: center;
   padding: 2em 2em;
   border-radius: 0.5em;
-  width: 50%;
-  font-family: var(--body-font);
+  width: 80%;
+  font-family: var(--result-font);
   margin: 0 auto;
   margin-top: 0.5em;
   /* box-shadow: 0 0 6px 0 black; */
@@ -92,7 +97,7 @@ main {
 .contenedor-service {
   background: var(--blue-main);
   width: 80%;
-  padding: 10px 10px;
+  padding: 2em 2em;
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(35, 42, 149, 0.25);
   margin: 0 auto;
@@ -107,7 +112,6 @@ main {
 
 .contenedor-service .grupo {
   position: relative;
-  margin: 45px;
 }
 
 input{
@@ -141,12 +145,14 @@ textarea:valid ~ label {
 
 label {
   color: var(--colorTextos);
-  font-size: 16px;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
-  left: 5px;
-  top: 10px;
+  top: 0px;
   transition: 0.5s ease all;
   pointer-events: none;
+  min-width: 300px;
+  text-align: center;
 }
 
 input:focus ~ .barra::before,
@@ -181,7 +187,7 @@ button {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
   .contenedor-service {
     width: 50%;
   }
@@ -191,17 +197,17 @@ button {
   .contenedor-service {
     width: 60%;
   }
-}
+} */
 
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
   contenedor-service {
     width: 80%;
   }
-}
+} */
 
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
   contenedor-service {
     width: 90%;
   }
-}
+} */
 </style>
