@@ -156,6 +156,7 @@ ul {
 
 .contact-wrapper {
     box-shadow: 0 00 020px black;
+    display: block;
 }
 
 .contact-wrapper > * {

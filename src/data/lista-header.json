@@ -1,40 +1,40 @@
 [
   {
-    "titulo": "servicios",
+    "titulo": "Servicios",
     "opciones": [
       {
-        "service": "publicaciones",
+        "service": "Publicaciones",
         "url": "/publicaciones"
       },
       {
-        "service": "historias",
+        "service": "Historias",
         "url": "/historias"
       },
       {
-        "service": "listas",
+        "service": "Listas",
         "url": "/listas"
       }
     ]
   },
   {
-    "titulo": "nosotros",
+    "titulo": "Nosotros",
     "opciones": [
       {
-        "service": "mision y vision",
+        "service": "Mision y vision",
         "url": "/historia"
       },
       {
-        "service": "contactenos",
+        "service": "Contactenos",
         "url": "/contactenos"
       }
     ]
   },
  
   {
-    "titulo": "prueba",
+    "titulo": "Prueba",
     "opciones": [
       {
-        "service": "iterpolacionlineal",
+        "service": "Iterpolacion lineal",
         "url": "/prueba"
       }
     ]

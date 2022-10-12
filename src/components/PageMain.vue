@@ -8,7 +8,6 @@
       <MainService />
       <CommentCard />
       <SecundaryContact />
-   
     </main>
     <MainFooter />
   </div>
@@ -26,10 +25,10 @@ import MainFooter from "@/components/OrganismsPageMain/MainFooter.vue";
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
 
 .contenedor {
-  font-family: var(--body-font);
+  font-family: var(--heading-font);
   background-color: var(--blue-main);
 }
 

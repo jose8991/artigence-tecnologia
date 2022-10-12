@@ -13,7 +13,8 @@
     var(--blue-gradient)
   );
 
-  --heading-font: "Raleway", sans-serif;
+  --heading-font: 'Kanit', sans-serif;
+  --result-font: 'Fira Code', monospace;
   --padding-container: 60px 0;
   --height:70px;
   --main-text-color: white;

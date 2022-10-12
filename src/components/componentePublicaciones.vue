@@ -18,7 +18,7 @@
               <input type="text" v-model="texto" /><span class="barra"></span>
               <label>ingreso del texto</label>
             </div>
-            <h1>{{ resultado }}</h1>
+            <h1 class="result">{{ resultado }}</h1>
             <button type="submit" @click="prueba">consultar</button>
           </div>
         </div>
@@ -61,7 +61,9 @@ main {
   padding-top: 100px;
   margin: auto;
 }
-
+.result{
+  font-family: var(--result-font)
+}
 .fondo h1 {
   color: white;
   text-align: center;
