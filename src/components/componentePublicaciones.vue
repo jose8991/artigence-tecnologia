@@ -38,8 +38,7 @@ import { ref } from "vue";
 import TransitionPrincipal from "@/components/TransitionService.vue";
 import { postPost } from "@/components/modules/responseModel.js";
 import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
-import responsive_lerpw from "@/components/modules/responsive-lerpw-css.js";
-console.log(responsive_lerpw);
+
 let texto = ref("");
 const resultado = ref(null);
 let loading = ref(false);

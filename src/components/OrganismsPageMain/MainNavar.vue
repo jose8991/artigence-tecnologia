@@ -59,11 +59,8 @@
 <script setup>
 import mainButton from "@/components/atoms/MainButton.vue";
 import DatosHeader from "@/data/lista-header.json";
-import responsive from "@/components/modules/responsive.js";
-import responsive_lerpw from "@/components/modules/responsive-lerpw-css.js";
 import { onMounted } from "vue";
-console.log(responsive);
-console.log(responsive_lerpw);
+
 const options = DatosHeader;
 onMounted(() => {
   Array.from(
