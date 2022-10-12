@@ -1,5 +1,5 @@
 <template>
- 
+  <!--  
   <div class="services__cards">
     <div class="service__card" v-for="service in servicedata" :key="service">
       <div class="cover__service__card">
@@ -11,6 +11,22 @@
       <div class="footer__service__card">
         <h3 class="user__name">{{ service.secondaryDegree }}</h3>
         <MainButton title="ir" :link="service.linkService" />
+      </div>
+    </div>
+  </div> -->
+  <div class="services__cards">
+    <div class="service__efect" v-for="service in servicedata" :key="service">
+      <div class="service__card" >
+        <div class="cover__service__card">
+          <img :src="service.img" alt="" />
+        </div>
+        <h2 class="service__title">{{ service.service }}</h2>
+        <p>{{ service.paragraph }}</p>
+        <hr />
+        <div class="footer__service__card">
+          <h3 class="user__name">{{ service.secondaryDegree }}</h3>
+          <MainButton title="ir" :link="service.linkService" />
+        </div>
       </div>
     </div>
   </div>
@@ -31,31 +47,59 @@ const servicedata = serviceData;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.services_title{
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: var(--white);
-}
-
-.service__card {
-  width: 350px;
+.service__efect {
+  position: relative;
+  width: 380px;
+  height: 420px;
   margin: 10px;
   padding: 20px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.1);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgb(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  transition: all 300ms;
+  background: #1c1c1c;
+  border-radius: 8px;
+  
+  overflow: hidden;
 }
+.service__efect::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.service__efect::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+.service__card {
+  position: absolute;
+  inset: 2px;
+  background: var(--blue-intro);
+  z-index: 10;
+  border-radius: 8px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 .service__card p {
   margin-top: 20px;
   font-size: 14px;
@@ -121,10 +165,5 @@ const servicedata = serviceData;
   font-size: 15px;
   font-weight: 500;
 }
-@media (min-width: 740px) {
-  .services__cards {
-    margin-top: 100px;
-    padding-bottom: 100px;
-  }
-}
+
 </style>
