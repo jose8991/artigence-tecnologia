@@ -16,15 +16,14 @@
   </div> -->
   <div class="services__cards">
     <div class="service__efect" v-for="service in servicedata" :key="service">
-      <div class="service__card" >
+      <div class="service__card">
         <div class="cover__service__card">
           <img :src="service.img" alt="" />
         </div>
-        <h2 class="service__title">{{ service.service }}</h2>
+        <h3 class="service__title">{{ service.service }}</h3>
         <p>{{ service.paragraph }}</p>
         <hr />
         <div class="footer__service__card">
-          <h3 class="user__name">{{ service.secondaryDegree }}</h3>
           <MainButton title="ir" :link="service.linkService" />
         </div>
       </div>
@@ -50,12 +49,12 @@ const servicedata = serviceData;
 .service__efect {
   position: relative;
   width: 380px;
-  height: 420px;
-  margin: 10px;
+  height: 515px;
+  margin: 15px;
   padding: 20px;
   background: #1c1c1c;
   border-radius: 8px;
-  
+
   overflow: hidden;
 }
 .service__efect::before {
@@ -64,10 +63,10 @@ const servicedata = serviceData;
   top: -50%;
   left: -50%;
   width: 380px;
-  height: 420px;
+  height: 515px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
   transform-origin: bottom right;
-  animation: animate 6s linear infinite;
+  animation: animate 10s linear infinite;
 }
 .service__efect::after {
   content: "";
@@ -75,14 +74,15 @@ const servicedata = serviceData;
   top: -50%;
   left: -50%;
   width: 380px;
-  height: 420px;
+  height: 515px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
   transform-origin: bottom right;
-  animation: animate 6s linear infinite;
-  animation-delay: -3s;
+  animation: animate 10s linear infinite;
+  animation-delay: -5s;
 }
 .service__card {
   position: absolute;
+  padding: 12px;
   inset: 2px;
   background: var(--blue-intro);
   z-index: 10;
@@ -98,16 +98,15 @@ const servicedata = serviceData;
   }
 }
 
-
-
 .service__card p {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
+  text-align: center;
   color: var(--white);
 }
 .service__card hr {
-  margin-top: 30px;
+  margin-top: 20px;
   border: none;
   height: 0.2px;
   background-color: #41414138;
@@ -148,22 +147,19 @@ const servicedata = serviceData;
   -o-transition: all 300ms;
 }
 .service__title {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.4em;
+  margin-bottom: 1em;
+  font-family: var(--heading-font);
   color: var(--white);
 }
 
 .footer__service__card {
-  margin-top: 10px;
+  padding-top: 5px;
   display: flex;
-  color: #fff;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
-
-.footer__service__card h3 {
-  font-size: 15px;
-  font-weight: 500;
-}
-
 </style>

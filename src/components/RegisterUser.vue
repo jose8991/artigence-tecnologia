@@ -26,12 +26,12 @@
         </form>
 
         <!--Register-->
-        <form action="" class="formulario__register">
+        <form action="" class="formulario__register" @submit.prevent="(register(email.value,password.value))">
           <h2>Regístrarse</h2>
-          <input type="text" placeholder="Nombre completo" />
           <input type="text" placeholder="Correo Electronico" />
-          <input type="text" placeholder="Usuario" />
-          <input type="password" placeholder="Contraseña" />
+          <input type="text" v-model="email" placeholder="Usuario" />
+          <input type="password" v-model="password" placeholder="Contraseña" />
+          <input type="password" v-model="repassword" placeholder="repetir contraseña" />
           <button>Regístrarse</button>
         </form>
       </div>
@@ -42,76 +42,65 @@
 <script setup>
 // import MainNavar from '@/components/OrganismsPageMain/MainNavar.vue';
 //Ejecutando funciones
-console.log("hola entro correctamente");
-setTimeout(() => {
-  document
-    .getElementById("btn__iniciar-sesion")
-    .addEventListener("click", iniciarSesion);
-  document
-    .getElementById("btn__registrarse")
-    .addEventListener("click", register);
-  window.addEventListener("resize", anchoPage);
+import registerAndLogin from '@/components/modules/RegisterLogin.js';
+// import { ref } from "vue";
+// import {db} from "@/components/modules/conectFirebase.js";
+// import {
+//   getAuth,
+//   createUserWithEmailAndPassword,
+//   } from "firebase/auth";
 
-  //Declarando variables
-  var formulario_login = document.querySelector(".formulario__login");
-  var formulario_register = document.querySelector(".formulario__register");
-  var contenedor_login_register = document.querySelector(
-    ".contenedor__login-register"
-  );
-  var caja_trasera_login = document.querySelector(".caja__trasera-login");
-  var caja_trasera_register = document.querySelector(".caja__trasera-register");
 
-  //FUNCIONES
+//     let email=ref('');
+//     let password=ref('');
+//     let repassword=ref('');
+//     let errorMessage=ref('');
 
-  function anchoPage() {
-    if (window.innerWidth > 850) {
-      caja_trasera_register.style.display = "block";
-      caja_trasera_login.style.display = "block";
-    } else {
-      caja_trasera_register.style.display = "block";
-      caja_trasera_register.style.opacity = "1";
-      caja_trasera_login.style.display = "none";
-      formulario_login.style.display = "block";
-      contenedor_login_register.style.left = "0px";
-      formulario_register.style.display = "none";
-    }
-  }
 
-  anchoPage();
+//      function register(email, password) {
+//         const auth = getAuth();
+//         createUserWithEmailAndPassword(auth, email.value, password.value)
+//         .then((userCredential) => {
+//             const user = userCredential.user;
+//             console.log(user);
+//             alert('¡Registrado!');
+//         })
+//         .catch((error) => {
+//             const errorCode = error.code;
+//             console.log(errorCode);
+//             errorMessage.value = error.message;
+//             alert(errorMessage.value);
+//             // ..
+//         });
+//       }
 
-  function iniciarSesion() {
-    if (window.innerWidth > 850) {
-      formulario_login.style.display = "block";
-      contenedor_login_register.style.left = "10px";
-      formulario_register.style.display = "none";
-      caja_trasera_register.style.opacity = "1";
-      caja_trasera_login.style.opacity = "0";
-    } else {
-      formulario_login.style.display = "block";
-      contenedor_login_register.style.left = "0px";
-      formulario_register.style.display = "none";
-      caja_trasera_register.style.display = "block";
-      caja_trasera_login.style.display = "none";
-    }
-  }
+    //   function login( email, password ) {
+    //    const auth = getAuth();
+    //     signInWithEmailAndPassword(auth, email, password)
+    //     .then((userCredential) => {
+    //         alert('¡Sesión iniciada!');
+    //         // Signed in
+    //         const user = userCredential.user;
+    //         // ...
+    //         })
+    //     .catch((error) => {
+    //     const errorCode = error.code;
+    //     this.errorMessage = error.message;
+    //     alert(this.errorMessage);
+    //     });
+    //     }
+    //   function signout () {
+    //    const auth = getAuth();
+    //   signOut(auth).then(() => {
+    //     alert('¡Sesión cerrada! Inicia sesión.');
+    //   }).catch((error) => {
+    //   });
+    //  }
 
-  function register() {
-    if (window.innerWidth > 850) {
-      formulario_register.style.display = "block";
-      contenedor_login_register.style.left = "410px";
-      formulario_login.style.display = "none";
-      caja_trasera_register.style.opacity = "0";
-      caja_trasera_login.style.opacity = "1";
-    } else {
-      formulario_register.style.display = "block";
-      contenedor_login_register.style.left = "0px";
-      formulario_login.style.display = "none";
-      caja_trasera_register.style.display = "none";
-      caja_trasera_login.style.display = "block";
-      caja_trasera_login.style.opacity = "1";
-    }
-  }
-}, 0);
+
+
+
+console.log(registerAndLogin);
 </script>
 
 <style scoped>

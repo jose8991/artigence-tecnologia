@@ -1,23 +1,20 @@
 [
     {
-        "img":"https://i.ibb.co/0YRpm3L/copyRead.jpg",
-        "service":"publicaciones",
-        "paragraph":" ¡Prueba nuestro servicio de inteligencia artificial para tus copys! Nuestro sistema es capaz de generar textos originales y de alta calidad, ¡perfectos para cualquier necesidad!",
-        "secondaryDegree":"artigence",
+        "img":"https://i.ibb.co/yhkM6Cy/Whats-App-Image-2022-10-13-at-21-32-14.jpg",
+        "service":"Copywrite",
+        "paragraph":" ¡Prueba nuestro servicio de inteligencia artificial para tus copywrite! Nuestro sistema es capaz de generar textos originales y de alta calidad, ¡perfectos para cualquier situación!",
         "linkService":"/publicaciones"
     },
     {
-        "img":"https://www.iartificial.net/wp-content/uploads/2019/02/IA.webp",
-        "service":"creador de historias",
-        "paragraph":"El servicio se basa en un algoritmo que analiza el contenido de un texto y genera una historia a partir de él. Los usuarios pueden elegir el tema de su historia, el número de personajes y el género literario.",
-        "secondaryDegree":"artigence",
+        "img":"https://cincodias.elpais.com/cincodias/imagenes/2020/02/19/pymes/1582128694_038572_1582129033_noticia_grande.jpg",
+        "service":"Creador de historias",
+        "paragraph":"Te permitirá generar una historia a partir de cualquier texto que desees, podrás elegir el tema de tu historia, el número de personajes , el lugar y las características.",
         "linkService":"/historias"
     },
     {
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhWe-5NN07oJ_zzwq94pPHLbUI3Dt4lhWx1A&usqp=CAU",
-        "service":"creador de listas",
-        "paragraph":"Necesitas una lista? No hay problema! Nuestro servicio de listas te permite crear una lista de cualquier cosa que necesites.",
-        "secondaryDegree":"artigence",
+        "img":"https://eduinpro.com/blog/wp-content/uploads/2019/06/2006192.jpg",
+        "service":"Creador de listas",
+        "paragraph":"Obtendras una lista perfecta a travez de inteligencia artificial seleccionando los mejores elementos, ya sean para el hogar, trabajo, educación, o el contexto de tu preferencia.",
         "linkService":"/listas"
     }
 ]

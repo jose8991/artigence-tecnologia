@@ -1,27 +1,32 @@
 <template>
   <MainNavar />
   <main>
-    <div class="fondo lerpw--font-size--i-2000px--30px--f-500px--15px--ends">
+    <div class="fondo lerpw--font-size--i-2000px--20px--f-500px--13px--ends">
       <div v-if="!loading">
         <div class="texto">
           <h2>
-            En esta opcion se haran copys para tus publicaciones <br />
-            de manera acertiva y efectiva, porfavor pon en la caja <br />
-            de texto la frase clave que creas necesarias para <br />
-            realizar el copy de tu agrado <br />
+            En esta opción podrás realizar copias para tus publicaciones de
+            manera acertiva y efectiva. Por favor, introduce la frase clave que
+            creas necesaria para realizar el copy de tu agrado.
           </h2>
         </div>
         <div class="contenedor-service">
           <div class="contenedor__form">
-            <h1 >ingresa el título que quieres generar</h1>
-            <br>
+            <h2>ingresa el título que quieres generar</h2>
+            <br />
             <div class="grupo">
-              <input type="text" v-model="texto" /><span class="barra"></span>
+              <input
+                type="text"
+                v-model="texto"
+                placeholder="ejemplo: inteligencia artificial para tus copys"
+              /><span class="barra"></span>
               <label>ingreso del texto</label>
             </div>
+            <br />
             <h1>{{ resultado }}</h1>
             <button type="submit" @click="prueba">consultar</button>
           </div>
+
         </div>
       </div>
       <div v-if="loading">
@@ -53,8 +58,6 @@ async function prueba() {
   loading.value = response.recarga;
   resultado.value = response.post;
 }
-
-
 </script>
 
 <style scoped>
@@ -65,19 +68,23 @@ main {
   padding-top: 100px;
   margin: auto;
 }
-.result{
-  font-family: var(--result-font)
+.result {
+  font-family: var(--result-font);
+}
+
+h1 {
+  font-family: var(--result-font);
+  font-size: 1.5rem;
+  text-align: center;
+
 }
 .fondo h1 {
   color: white;
-  text-align: center;
   width: 100%;
   word-wrap: break-word;
   color: var(--gradient);
   font-family: var(--heading-font);
 }
-
-
 
 .texto {
   color: white;
@@ -91,7 +98,10 @@ main {
   margin-top: 0.5em;
   /* box-shadow: 0 0 6px 0 black; */
 }
+.texto h2{
+  text-align:center;
 
+}
 
 .contenedor-service {
   background: var(--blue-main);
@@ -107,17 +117,19 @@ main {
 .contenedor__form {
   width: 100%;
   margin: auto;
+  padding: 0 10px;
 }
 
 .contenedor-service .grupo {
+  padding: 0 10px;
   position: relative;
 }
 
-input{
+input {
   background: none;
   color: white;
   font-size: 18px;
-  padding: 10px 10px 10px 5px;
+  padding: 15px 15px 15px 5px;
   display: block;
   width: 100%;
   border: none;
@@ -152,6 +164,7 @@ label {
   pointer-events: none;
   min-width: 300px;
   text-align: center;
+  padding: 0 10px;
 }
 
 input:focus ~ .barra::before,

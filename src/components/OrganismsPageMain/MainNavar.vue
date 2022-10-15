@@ -11,7 +11,7 @@
     <RouterLink to="/" id="logo-menu-head">
       <img
         class="
-          lerpw--height--i-1000px--45px--f-500px--30px--ends
+          lerpw--height--i-1000px--43px--f-500px--25px--ends
         "
         src="@/assets/images_new_project/logo-no-background.png"
       />
@@ -51,7 +51,7 @@
     <mainButton
       title="registrarse"
       link="/registrarse"
-      class=" lerpw--font-size--i-1000px--15px--f-450px--8px--ends"
+      class=" lerpw--font-size--i-1000px--18px--f-450px--12px--ends"
     />
   </nav>
 </template>
@@ -245,12 +245,13 @@ nav {
     overflow-y: auto;
     position: fixed !important;
     display: block !important;
-    width: 40vw;
+    width: 45vw;
     height: 100vh;
     background: var(--blue-intro);
     top: 70px;
     left: -100%;
     text-align: center;
+    opacity: 0.95;
   }
 
   .ul-desplegable-vertical ul > li {
