@@ -7,31 +7,33 @@
             <img src="@/assets/images_new_project/logo-no-background.png" alt="">
         </div>
         <div class="terms">
-            <p>La era digital en nuestra tecnologia de inteligencia artificial ayudara a ser facil la vida de muchas personas.</p>
+            <p>La inteligencia artificial es una herramienta
+            para mejorar tu vida, con ella, podrás automatizar tareas tediosas, 
+                obtener respuestas a preguntas de forma rápida y eficiente, y mucho más..</p>
         </div>
     </div>
     <div class="box__footer">
         <h2>Soluciones</h2>
-        <a href="https://www.google.com">App Desarrollo</a>
-        <a href="#">App Marketing</a>
-        <a href="#">IOS Desarrollo</a>
-        <a href="#">Android Desarrollo</a>
+        <a href="https://www.google.com">Desarrollo</a>
+        <a href="#">Marketing</a>
+        <a href="#">Educativos</a>
+        <a href="#">inteligencia Artificial</a>
     </div>
 
     <div class="box__footer">
-        <h2>Compañia</h2>
-        <a href="#">Acerca de</a>
-        <a href="#">Trabajos</a>
-        <a href="#">Procesos</a>
-        <a href="#">Servicios</a>              
+        <h2>Acerca de</h2>
+        <a href="#">Mision</a>
+        <a href="#">Vision</a>
+        <a href="#">Contactenos</a>
+        <a href="#">Informacion nuestra</a>              
     </div>
 
     <div class="box__footer">
         <h2>Redes Sociales</h2>
-        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-        <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-        <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100086944389297"> <i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="https://twitter.com/ArtigenceT"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href="https://www.linkedin.com/in/artigence-inteligencia-artificial-142baa253/"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <!--<a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>-->
     </div>
 
 </div>
