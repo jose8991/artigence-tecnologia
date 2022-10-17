@@ -1,8 +1,9 @@
 <template>
+    <MainNavar/>
     <div class="container">
       <div class="box">
         <div class="form">
-          <h2>ingresar</h2>
+          <h2>INGRESAR</h2>
           <div class="inputBox">
               <input type="text" v-model="email_login" required="required">
               <span>Correo electronico</span>
@@ -24,7 +25,7 @@
   </template>
   
   <script setup>
-  // import MainNavar from '@/components/OrganismsPageMain/MainNavar.vue';
+import MainNavar from '@/components/OrganismsPageMain/MainNavar.vue';
 //Ejecutando funciones
 import { ref } from 'vue'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'

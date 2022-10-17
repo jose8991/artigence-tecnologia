@@ -106,7 +106,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
+img{
+  height: 30px;
+}
 .borrar{
   display: none;
   color: red;
@@ -249,6 +251,9 @@ nav {
 }
 
 @media (max-width: 1000px) {
+  img{
+    height: 25px;
+  }
   #ajustador-de-menu {
     display: block !important;
   }

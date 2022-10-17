@@ -2,65 +2,80 @@
   <div class="container">
     <div class="box">
       <div class="form">
-        <h2>ingresar</h2>
+        <h2>REGISTRARSE</h2>
         <div class="inputBox">
-            <input type="text" required="required">
+            <input type="text" v-model="email_login" required="required">
             <span>Correo electronico</span>
             <i></i>
         </div>
         <div class="inputBox">
-            <input type="password" required="required">
+            <input type="password" v-model="password_login" required="required">
             <span>Contraseña</span>
             <i></i>
         </div>
-        <div class="links">
-            <a href="/registrarse">registrarse</a>
+        <div class="inputBox">
+            <input type="password" v-model="password_login_v" required="required">
+            <span>Verificar contraseña</span>
+            <i></i>
         </div>
-        <input type="submit" value="Ingresar">
+        <div class="links">
+            <a href="/ingresar">Iniciar secccion</a>
+        </div>
+        <input type="submit" @click="register"   value="Ingresar">
       </div>
+      <h1>{{errMgs}}</h1>
     </div>
   </div>
 </template>
 
 <script setup>
-// import { ref } from "vue";
-// import {
-//   getAuth,
-//   createUserWithEmailAndPassword,
-//   GoogleAuthProvider,
-//   signInWithPopup,
-// } from "firebase/auth";
-// import { useRouter } from "vue-router";
-// const email = ref("");
-// const password = ref("");
-// const router = useRouter();
-// const register = () => {
-//   createUserWithEmailAndPassword(getAuth(), email.value, password.value)
-//     .then((userCredential) => {
-//       // Signed in
-//       console.log(userCredential);
-//       console.log("usuario registrado");
-//       router.push("/");
-//       // ...
-//     })
-//     .catch((error) => {
-//       const errorCode = error.code;
-//       const errorMessage = error.message;
-//       console.log(errorCode, errorMessage);
-//       // ..
-//     });
-// };
-// const singInWithGoogle = () => {
-//   const provider = new GoogleAuthProvider();
-//   signInWithPopup(getAuth(), provider)
-//     .then((result) => {
-//       console.log(result.user);
-//       router.push("/");
-//     })
-//     .catch((error) => {
-//       console.log(error);
-//     });
-// };
+// import MainNavar from '@/components/OrganismsPageMain/MainNavar.vue';
+//Ejecutando funciones
+import { ref } from 'vue'
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import {useRouter} from 'vue-router'
+
+
+const router = useRouter()
+const email_login = ref('')
+const password_login = ref('')
+const password_login_v= ref('')
+
+const errMgs= ref('')
+
+const register = () => {
+  createUserWithEmailAndPassword(getAuth(),email_login.value,password_login.value)
+  .then((userCredential) => {
+      // Signed in 
+
+      console.log(userCredential)
+      console.log('usuario registrado')
+      router.push('/')
+      // ...
+  })
+  .catch((error) => {
+      console.log(error.code)
+      switch(error.code){
+          case 'auth/invalid-email':
+              errMgs.value = 'email invalido'
+              break;
+          case 'auth/user-not-found':
+              errMgs.value = 'usuario no encontrado'
+              break;
+          case 'auth/wrong-password':
+              errMgs.value = 'contraseña incorrecta'
+              break;
+          default:
+              errMgs.value = 'usuario o contraseña incorrecta'
+              break;
+          
+      }
+      // ..
+  });
+}
+
+
+
 </script>
 
 <style scoped>
@@ -73,8 +88,8 @@
 }
 .box {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   margin: 15px;
   padding: 20px;
   background: #1c1c1c;
@@ -86,8 +101,8 @@
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
   transform-origin: bottom right;
   animation: animate 8s linear infinite;
@@ -99,8 +114,8 @@
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
   transform-origin: bottom right;
   animation: animate 8s linear infinite;
@@ -137,7 +152,7 @@
     background: transparent;
     border: none;
     outline: none;
-    color: #23242a;
+    color: white;
     font-size: 1em;
     letter-spacing: 0.05em;
 }

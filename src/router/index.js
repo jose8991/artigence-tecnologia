@@ -8,7 +8,7 @@ import RegisterAndLogin from "../views/RegisterLogin.vue";
 import ContactMain from "../views/ContactMain.vue";
 import MissionVision from "../views/MissionVision.vue";
 import loginPrincipal from "../components/prueba/loginPrincipal.vue";
-import registroPrueba from "../components/prueba/registroPrueba.vue";
+import RegistroPrincipal from "../components/prueba/RegistroPrincipal.vue";
 import { getAuth } from "firebase/auth";
 // const user = auth.currentUser;
 // const email = ref(user.email);
@@ -29,12 +29,12 @@ const routes = [
   {
     path: "/registrarse",
     name: "registrarse",
-    component: RegisterAndLogin,
+    component: RegistroPrincipal,
   },
   
   {
     path: "/pruebaregistro",
-    component: registroPrueba,
+    component: RegisterAndLogin,
   },
   {
     path: "/ingresar",
