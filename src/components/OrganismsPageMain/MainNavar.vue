@@ -49,8 +49,8 @@
     </ul>
 
     <mainButton
-      title="registrarse"
-      link="/registrarse"
+      title="ingresar"
+      link="/ingresar"
       class=" lerpw--font-size--i-1000px--18px--f-450px--12px--ends"
     />
     <button @click="handleSignOut" v-if="isLoggedIn">cerrar seccion</button>

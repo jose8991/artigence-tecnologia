@@ -15,6 +15,7 @@ import { getAuth } from "firebase/auth";
 // console.log(email);
 // const auth = getAuth();
 const routes = [
+
   {
     path: "/",
     name: "home",
@@ -30,13 +31,14 @@ const routes = [
     name: "registrarse",
     component: RegisterAndLogin,
   },
+  
   {
     path: "/pruebaregistro",
     component: registroPrueba,
   },
   {
-    path: "/login",
-    name: "login",
+    path: "/ingresar",
+    name: "ingresar",
     component: loginPrincipal,
   },
   {
@@ -62,6 +64,11 @@ const routes = [
       requiresAuth: true,
     }
   },
+  {
+    path: "/404",
+    redirect: "/"
+  }
+
 ];
 
 const router = createRouter({

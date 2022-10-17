@@ -54,10 +54,7 @@ footer{
     *background-size: cover;
     
     background-color:var(--blue-footer);
-    /* -webkit-mask-image: url('@/assets/images_new_project/background-footer.svg');
-    mask-image: url('@/assets/images_new_project/background-footer.svg'); */
-    /* -webkit-mask-size: cover;
-    mask-size: cover; */
+
 }
 
 .container__footer{
@@ -67,6 +64,8 @@ footer{
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .box__footer{
