@@ -28,7 +28,14 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import { getAuth} from 'firebase/auth'
+const auth = getAuth();
+const user = ref(auth.currentUser);
+console.log(user.value)
+
+</script>
 
 <style scoped>
 .container__all {

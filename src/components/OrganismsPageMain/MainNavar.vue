@@ -53,16 +53,44 @@
       link="/registrarse"
       class=" lerpw--font-size--i-1000px--18px--f-450px--12px--ends"
     />
+    <button @click="handleSignOut" v-if="isLoggedIn">cerrar seccion</button>
+    <h1 class="borrar">{{userLogeado}}</h1>
   </nav>
 </template>
 
 <script setup>
 import mainButton from "@/components/atoms/MainButton.vue";
 import DatosHeader from "@/data/lista-header.json";
-import { onMounted } from "vue";
-
+import {useRouter} from 'vue-router'
+import { onMounted, ref } from "vue";
+import { getAuth, onAuthStateChanged,signOut } from "firebase/auth";
+const router = useRouter()
+const isLoggedIn = ref(false);
 const options = DatosHeader;
+const autht = getAuth();
+const user = autht.currentUser;
+const userLogeado= ref(user)
+
+
+let auth ;
+const handleSignOut = () => {
+  signOut(auth).then(() => {
+    console.log('cerrando sesion')
+    router.push('/')
+  }).catch((error) => {
+    console.log(error)
+  });
+  console.log("cerrar seccion");
+};
 onMounted(() => {
+  auth = getAuth();
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      isLoggedIn.value = true;
+    } else {
+      isLoggedIn.value = false;
+    }
+  });
   Array.from(
     document.getElementsByTagName("nav")[0].getElementsByTagName("label")
   )
@@ -79,7 +107,10 @@ onMounted(() => {
 
 <style scoped>
 
-
+.borrar{
+  display: none;
+  color: red;
+}
 .ul-desplegable-vertical label {
   font-weight: normal;
   position: relative;

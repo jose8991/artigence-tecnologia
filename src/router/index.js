@@ -7,7 +7,13 @@ import ServicioLista from "../views/ServicioLista.vue";
 import RegisterAndLogin from "../views/RegisterLogin.vue";
 import ContactMain from "../views/ContactMain.vue";
 import MissionVision from "../views/MissionVision.vue";
-
+import loginPrincipal from "../components/prueba/loginPrincipal.vue";
+import registroPrueba from "../components/prueba/registroPrueba.vue";
+import { getAuth } from "firebase/auth";
+// const user = auth.currentUser;
+// const email = ref(user.email);
+// console.log(email);
+// const auth = getAuth();
 const routes = [
   {
     path: "/",
@@ -21,7 +27,17 @@ const routes = [
   },
   {
     path: "/registrarse",
+    name: "registrarse",
     component: RegisterAndLogin,
+  },
+  {
+    path: "/pruebaregistro",
+    component: registroPrueba,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: loginPrincipal,
   },
   {
     path: "/contactenos",
@@ -42,12 +58,27 @@ const routes = [
   {
     path: "/prueba",
     component: interpolacionLineal,
+    meta: {
+      requiresAuth: true,
+    }
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  const rutaProtegida = to.matched.some((record) => record.meta.requiresAuth);
+  const auth = getAuth();
+  const usuario = auth.currentUser;
+  if (rutaProtegida === true && usuario === null) {
+    alert("Para acceder a este servicios debes iniciar seccion");
+    next({ name: "registrarse" });
+  } else {
+    next();
+  }
 });
 
 export default router;

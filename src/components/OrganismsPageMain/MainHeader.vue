@@ -27,6 +27,7 @@
 import { onMounted } from "vue";
 import Typed from "typed.js";
 
+
 onMounted(() => {
   const typed = new Typed(".typed", {
     strings: ["analizar", "comprender", "generar",".....................pruebaaaaa"],
