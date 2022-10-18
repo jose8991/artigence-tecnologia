@@ -21,7 +21,7 @@
     </div>
 
     <div class="box__footer">
-        <h2>Acerca de</h2>
+        <h2>Acerca de Nostros</h2>
         <a href="#">Mision</a>
         <a href="#">Vision</a>
         <a href="#">Contactenos</a>
@@ -61,7 +61,6 @@ footer{
     /* -webkit-mask-size: cover;
     mask-size: cover; */
 }
-
 .container__footer{
     display: flex;
     flex-wrap: wrap;
