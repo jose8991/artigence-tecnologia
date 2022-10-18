@@ -6,12 +6,11 @@ import interpolacionLineal from "../views/interpolacionLineal.vue";
 import ServicioLista from "../views/services/ServicioLista.vue";
 import ContactMain from "../views/ContactMain.vue";
 import MissionVision from "../views/MissionVision.vue";
-import loginPrincipal from "../components/loginRegister/loginPrincipal.vue";
+import loginPrincipal from "../views/RegisterLogin/LoginView.vue";
 import RegistroPrincipal from "../components/loginRegister/RegistroPrincipal.vue";
 import { getAuth } from "firebase/auth";
 
 const routes = [
-
   {
     path: "/",
     name: "home",
@@ -53,13 +52,12 @@ const routes = [
     component: interpolacionLineal,
     meta: {
       requiresAuth: true,
-    }
+    },
   },
   {
     path: "/404",
-    redirect: "/"
-  }
-
+    redirect: "/",
+  },
 ];
 
 const router = createRouter({

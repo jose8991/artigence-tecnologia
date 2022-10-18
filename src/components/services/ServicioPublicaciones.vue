@@ -41,7 +41,7 @@
 import { ref } from "vue";
 import TransitionPrincipal from "@/components/TransitionService.vue";
 import { postPost } from "@/components/modules/responseModel.js";
-import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
+import MainNavar from "@/components/MainNavar.vue";
 
 let texto = ref("");
 const resultado = ref(null);

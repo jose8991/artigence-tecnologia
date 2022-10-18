@@ -2,7 +2,7 @@
   <div class="container">
     <div class="box">
       <div class="form">
-        <h2>REGISTRARSE</h2>
+        <h2>INGRESAR</h2>
         <div class="inputBox">
           <input type="text" v-model="email_login" required="required" />
           <span>Correo electronico</span>
@@ -13,19 +13,10 @@
           <span>Contraseña</span>
           <i></i>
         </div>
-        <div class="inputBox">
-          <input
-            type="password"
-            v-model="password_login_v"
-            required="required"
-          />
-          <span>Verificar contraseña</span>
-          <i></i>
-        </div>
         <div class="links">
-          <a href="/ingresar">Iniciar secccion</a>
+          <a href="/registrarse">registrarse</a>
         </div>
-        <input type="submit" @click="register" value="Ingresar" />
+        <input type="submit" @click="login" value="Ingresar" />
       </div>
       <h1>{{ errMgs }}</h1>
     </div>
@@ -34,22 +25,17 @@
 
 <script setup>
 import { ref } from "vue";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
 const email_login = ref("");
 const password_login = ref("");
-const password_login_v = ref("");
 
 const errMgs = ref("");
 
-const register = () => {
-  createUserWithEmailAndPassword(
-    getAuth(),
-    email_login.value,
-    password_login.value
-  )
+const login = () => {
+  signInWithEmailAndPassword(getAuth(), email_login.value, password_login.value)
     .then((userCredential) => {
       console.log(userCredential);
       console.log("usuario registrado");
@@ -85,8 +71,8 @@ const register = () => {
 }
 .box {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin: 15px;
   padding: 20px;
   background: #1c1c1c;
@@ -98,8 +84,8 @@ const register = () => {
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
   transform-origin: bottom right;
   animation: animate 8s linear infinite;
@@ -110,8 +96,8 @@ const register = () => {
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
   transform-origin: bottom right;
   animation: animate 8s linear infinite;
@@ -159,7 +145,6 @@ const register = () => {
   font-size: 1em;
   color: white;
   top: 10px;
-
   font-size: 1em;
   letter-spacing: 0.05em;
   transition: 0.5s;

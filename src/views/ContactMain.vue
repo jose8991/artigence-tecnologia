@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
+import MainNavar from "@/components/MainNavar.vue";
 import contactus from "@/components/ContactPrincipal.vue";
 import MainFooter from "../components/OrganismsPageMain/MainFooter.vue";
 </script>

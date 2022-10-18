@@ -1,8 +1,8 @@
 <template>
-  <EsperaOk />
+  <LoadingService />
 </template>
 
 <script setup>
-import EsperaOk from "@/components/molecules/LoadingService.vue";
+import LoadingService from "@/components/molecules/LoadingService.vue";
 </script>
 <style scoped></style>

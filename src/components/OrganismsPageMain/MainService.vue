@@ -9,10 +9,6 @@
         autoplay
         class="productive__img"
       ></lottie-player>
-      <!-- <img
-            src="@/assets/images_new_project/illustration-stay-productive.png"
-            class="productive__img"
-          /> -->
     </figure>
 
     <div class="productive__texts">
@@ -41,9 +37,7 @@
   </section>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped>
 .productive {

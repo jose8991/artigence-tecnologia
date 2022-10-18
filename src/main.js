@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import  '@/assets/Images/colors.css'
+import  '@/assets/Images/globalVariables.css'
 import  "@/components/modules/responsive-lerpw-css.js";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";

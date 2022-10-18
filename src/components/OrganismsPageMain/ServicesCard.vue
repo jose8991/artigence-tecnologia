@@ -1,19 +1,4 @@
 <template>
-  <!--  
-  <div class="services__cards">
-    <div class="service__card" v-for="service in servicedata" :key="service">
-      <div class="cover__service__card">
-        <img :src="service.img" alt="" />
-      </div>
-      <h2 class="service__title">{{ service.service }}</h2>
-      <p>{{ service.paragraph }}</p>
-      <hr />
-      <div class="footer__service__card">
-        <h3 class="user__name">{{ service.secondaryDegree }}</h3>
-        <MainButton title="ir" :link="service.linkService" />
-      </div>
-    </div>
-  </div> -->
   <div class="services__cards">
     <div class="service__efect" v-for="service in servicedata" :key="service">
       <div class="service__card">

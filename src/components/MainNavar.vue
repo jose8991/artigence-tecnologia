@@ -10,17 +10,12 @@
     </label>
     <RouterLink to="/" id="logo-menu-head">
       <img
-        class="
-          lerpw--height--i-1000px--43px--f-500px--25px--ends
-        "
+        class="lerpw--height--i-1000px--43px--f-500px--25px--ends"
         src="@/assets/images_new_project/logo-no-background.png"
       />
     </RouterLink>
-    <ul 
-      class="
-        ul-desplegable-vertical
-        lerpw--font-size--i-2000px--20px--f-1000px--15px--ends
-      "
+    <ul
+      class="ul-desplegable-vertical lerpw--font-size--i-2000px--20px--f-1000px--15px--ends"
     >
       <li
         class="li-desplegable-vertical"
@@ -51,35 +46,36 @@
     <mainButton
       title="ingresar"
       link="/ingresar"
-      class=" lerpw--font-size--i-1000px--18px--f-450px--12px--ends"
+      class="lerpw--font-size--i-1000px--18px--f-450px--12px--ends"
     />
     <button @click="handleSignOut" v-if="isLoggedIn">cerrar seccion</button>
-    <h1 class="borrar">{{userLogeado}}</h1>
+    <h1 class="borrar">{{ userLogeado }}</h1>
   </nav>
 </template>
 
 <script setup>
 import mainButton from "@/components/atoms/MainButton.vue";
 import DatosHeader from "@/data/lista-header.json";
-import {useRouter} from 'vue-router'
+import { useRouter } from "vue-router";
 import { onMounted, ref } from "vue";
-import { getAuth, onAuthStateChanged,signOut } from "firebase/auth";
-const router = useRouter()
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+const router = useRouter();
 const isLoggedIn = ref(false);
 const options = DatosHeader;
 const autht = getAuth();
 const user = autht.currentUser;
-const userLogeado= ref(user)
+const userLogeado = ref(user);
 
-
-let auth ;
+let auth;
 const handleSignOut = () => {
-  signOut(auth).then(() => {
-    console.log('cerrando sesion')
-    router.push('/')
-  }).catch((error) => {
-    console.log(error)
-  });
+  signOut(auth)
+    .then(() => {
+      console.log("cerrando sesion");
+      router.push("/");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   console.log("cerrar seccion");
 };
 onMounted(() => {
@@ -106,10 +102,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
-img{
+img {
   height: 30px;
 }
-.borrar{
+.borrar {
   display: none;
   color: red;
 }
@@ -143,7 +139,6 @@ img{
   padding: 0;
 }
 
-
 .ul-desplegable-vertical li a {
   cursor: pointer;
 }
@@ -160,8 +155,6 @@ img{
   padding: 5px 15px;
 }
 
-
-
 .ul-desplegable-vertical li a {
   text-decoration: none;
   color: inherit;
@@ -174,7 +167,7 @@ img{
 
 .ul-desplegable-vertical ul {
   /* este es el submenu */
-  background-color:var(--blue-intro);
+  background-color: var(--blue-intro);
   border-radius: 0px 0px 10px 10px;
   overflow: hidden;
 }
@@ -251,7 +244,7 @@ nav {
 }
 
 @media (max-width: 1000px) {
-  img{
+  img {
     height: 25px;
   }
   #ajustador-de-menu {
@@ -320,7 +313,7 @@ nav {
 }
 
 .underline-sub-menu {
-  border-bottom: 4px solid #62E0D9;
+  border-bottom: 4px solid #62e0d9;
 }
 
 li:hover label > .underline {
