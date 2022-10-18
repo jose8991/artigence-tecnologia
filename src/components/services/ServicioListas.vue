@@ -1,32 +1,27 @@
 <template>
   <MainNavar />
   <main>
-    <div class="fondo lerpw--font-size--i-2000px--20px--f-500px--13px--ends">
+    <div class="fondo lerpw--font-size--i-2000px--30px--f-500px--15px--ends">
       <div v-if="!loading">
         <div class="texto">
           <h2>
-            En esta opción podrás realizar copias para tus publicaciones de
-            manera acertiva y efectiva. Por favor, introduce la frase clave que
-            creas necesaria para realizar el copy de tu agrado.
+            En esta opcion se hara una lista<br />
+            de un tema especifico de manera acertiva y efectiva, porfavor pon en
+            la caja <br />
+            de texto la lista a <br />
+            generar <br />
           </h2>
         </div>
         <div class="contenedor-service">
           <div class="contenedor__form">
-            <h2>ingresa el título que quieres generar</h2>
-            <br />
+            <h1>ingresa el tema de la lista a generar</h1>
             <div class="grupo">
-              <input
-                type="text"
-                v-model="texto"
-                placeholder="ejemplo: inteligencia artificial para tus copys"
-              /><span class="barra"></span>
+              <input type="text" v-model="texto" /><span class="barra"></span>
               <label>ingreso del texto</label>
             </div>
-            <br />
             <h1>{{ resultado }}</h1>
-            <button type="submit" @click="prueba">consultar</button>
+            <button type="submit" @click="lista">consultar</button>
           </div>
-
         </div>
       </div>
       <div v-if="loading">
@@ -43,15 +38,14 @@ import { ref } from "vue";
 import TransitionPrincipal from "@/components/TransitionService.vue";
 import { postPost } from "@/components/modules/responseModel.js";
 import MainNavar from "@/components/OrganismsPageMain/MainNavar.vue";
-
 let texto = ref("");
 const resultado = ref(null);
 let loading = ref(false);
 
-async function prueba() {
+async function lista() {
   loading.value = true;
   let post = ref({
-    tipo: "publicacion",
+    tipo: "lista",
     contenido: texto.value,
   });
   const response = await postPost(post.value);
@@ -76,7 +70,6 @@ h1 {
   font-family: var(--result-font);
   font-size: 1.5rem;
   text-align: center;
-
 }
 .fondo h1 {
   color: white;
@@ -98,9 +91,8 @@ h1 {
   margin-top: 0.5em;
   /* box-shadow: 0 0 6px 0 black; */
 }
-.texto h2{
-  text-align:center;
-
+.texto h2 {
+  text-align: center;
 }
 
 .contenedor-service {
@@ -198,28 +190,4 @@ button {
   margin: 10px auto;
   cursor: pointer;
 }
-
-/* @media screen and (max-width: 1100px) {
-  .contenedor-service {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .contenedor-service {
-    width: 60%;
-  }
-} */
-
-/* @media screen and (max-width: 450px) {
-  contenedor-service {
-    width: 80%;
-  }
-} */
-
-/* @media screen and (max-width: 300px) {
-  contenedor-service {
-    width: 90%;
-  }
-} */
 </style>

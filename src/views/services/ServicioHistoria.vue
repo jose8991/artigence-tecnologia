@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import componenteResumenes from "@/components/componenteResumenes.vue";
+import componenteResumenes from "@/components/services/ServicioHistoria.vue";
 export default {
   components: {
     componenteResumenes,

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ComponentePublicacion from "@/components/componentePublicaciones.vue";
+import ComponentePublicacion from "@/components/services/ServicioPublicaciones.vue";
 export default {
   components: {
     ComponentePublicacion,

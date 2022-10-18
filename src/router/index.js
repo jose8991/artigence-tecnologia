@@ -1,19 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
 import VistaPrincipal from "../views/VistaPrincipal.vue";
-import ServicioPublicacion from "../views/ServicioPublicaciones.vue";
-import ServicioHistorias from "../views/ServicioHistoria.vue";
+import ServicioPublicacion from "../views/services/ServicioPublicaciones.vue";
+import ServicioHistorias from "../views/services/ServicioHistoria.vue";
 import interpolacionLineal from "../views/interpolacionLineal.vue";
-import ServicioLista from "../views/ServicioLista.vue";
-import RegisterAndLogin from "../views/RegisterLogin.vue";
+import ServicioLista from "../views/services/ServicioLista.vue";
 import ContactMain from "../views/ContactMain.vue";
 import MissionVision from "../views/MissionVision.vue";
-import loginPrincipal from "../components/prueba/loginPrincipal.vue";
-import RegistroPrincipal from "../components/prueba/RegistroPrincipal.vue";
+import loginPrincipal from "../components/loginRegister/loginPrincipal.vue";
+import RegistroPrincipal from "../components/loginRegister/RegistroPrincipal.vue";
 import { getAuth } from "firebase/auth";
-// const user = auth.currentUser;
-// const email = ref(user.email);
-// console.log(email);
-// const auth = getAuth();
+
 const routes = [
 
   {
@@ -30,11 +26,6 @@ const routes = [
     path: "/registrarse",
     name: "registrarse",
     component: RegistroPrincipal,
-  },
-  
-  {
-    path: "/pruebaregistro",
-    component: RegisterAndLogin,
   },
   {
     path: "/ingresar",

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import componenteListas from "@/components/componenteListas.vue";
+import componenteListas from "@/components/services/ServicioListas.vue";
 export default {
   components: {
     componenteListas,
