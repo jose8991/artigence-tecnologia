@@ -1,9 +1,9 @@
 <template>
   <MainNavar />
-  <componenteResumenes />
+  <poesia />
 </template>
 
 <script setup>
 import MainNavar from "@/components/MainNavar.vue";
-import componenteResumenes from "@/components/services/ServicioHistoria.vue";
+import poesia from "@/components/services/ServicioPoesia.vue";
 </script>

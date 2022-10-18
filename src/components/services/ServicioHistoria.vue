@@ -1,5 +1,4 @@
 <template>
-  <MainNavar />
   <main>
     <div class="fondo lerpw--font-size--i-2000px--30px--f-500px--15px--ends">
       <div v-if="!loading">
@@ -37,7 +36,7 @@
 import { ref } from "vue";
 import TransitionPrincipal from "@/components/TransitionService.vue";
 import { postPost } from "@/components/modules/responseModel.js";
-import MainNavar from "@/components/MainNavar.vue";
+
 let texto = ref("");
 const resultado = ref(null);
 let loading = ref(false);

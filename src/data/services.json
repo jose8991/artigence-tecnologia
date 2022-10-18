@@ -16,5 +16,18 @@
         "service":"Creador de listas",
         "paragraph":"Obtendras una lista perfecta a travez de inteligencia artificial seleccionando los mejores elementos, ya sean para el hogar, trabajo, educación, o el contexto de tu preferencia.",
         "linkService":"/listas"
+    },
+    {
+        "img":"https://eduinpro.com/blog/wp-content/uploads/2019/06/2006192.jpg",
+        "service":"Creador de ensayos",
+        "paragraph":"Obtendras una lista perfecta a travez de inteligencia artificial seleccionando los mejores elementos, ya sean para el hogar, trabajo, educación, o el contexto de tu preferencia.",
+        "linkService":"/ensayos"
+    },
+    {
+        "img":"https://eduinpro.com/blog/wp-content/uploads/2019/06/2006192.jpg",
+        "service":"Creador de peoesia",
+        "paragraph":"Obtendras una lista perfecta a travez de inteligencia artificial seleccionando los mejores elementos, ya sean para el hogar, trabajo, educación, o el contexto de tu preferencia.",
+        "linkService":"/poesia"
     }
+
 ]

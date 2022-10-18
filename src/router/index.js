@@ -1,13 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
-import VistaPrincipal from "../views/VistaPrincipal.vue";
 import ServicioPublicacion from "../views/services/ServicioPublicaciones.vue";
 import ServicioHistorias from "../views/services/ServicioHistoria.vue";
-import interpolacionLineal from "../views/interpolacionLineal.vue";
 import ServicioLista from "../views/services/ServicioLista.vue";
-import ContactMain from "../views/ContactMain.vue";
+import ServicioEnsayos from "../views/services/ServicioEnsayos.vue";
+import ServicioPoesia from "../views/services/ServicioPoesia.vue";
 import MissionVision from "../views/MissionVision.vue";
 import loginPrincipal from "../views/RegisterLogin/LoginView.vue";
-import RegistroPrincipal from "../components/loginRegister/RegistroPrincipal.vue";
+import registerPrincipal from "../views/RegisterLogin/RegisterView.vue";
+import VistaPrincipal from "../views/VistaPrincipal.vue";
+import interpolacionLineal from "../views/interpolacionLineal.vue";
+import ContactMain from "../views/ContactMain.vue";
+import textosEjemplos from "../views/textosEjemplos.vue";
 import { getAuth } from "firebase/auth";
 
 const routes = [
@@ -17,14 +20,9 @@ const routes = [
     component: VistaPrincipal,
   },
   {
-    path: "/publicaciones",
-    name: "publicaciones",
-    component: ServicioPublicacion,
-  },
-  {
     path: "/registrarse",
     name: "registrarse",
-    component: RegistroPrincipal,
+    component: registerPrincipal,
   },
   {
     path: "/ingresar",
@@ -46,6 +44,26 @@ const routes = [
   {
     path: "/listas",
     component: ServicioLista,
+  },
+  {
+    path: "/publicaciones",
+    name: "publicaciones",
+    component: ServicioPublicacion,
+  },
+  {
+    path: "/ensayos",
+    name: "ensayos",
+    component: ServicioEnsayos,
+  },
+  {
+    path: "/poesia",
+    name: "poesia",
+    component: ServicioPoesia,
+  },
+  {
+    path: "/generados",
+    name: "generados",
+    component: textosEjemplos,
   },
   {
     path: "/prueba",

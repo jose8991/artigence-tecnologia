@@ -13,6 +13,14 @@
       {
         "service": "Listas",
         "url": "/listas"
+      },
+      {
+        "service": "Ensayos",
+        "url": "/ensayos"
+      },
+      {
+        "service": "Poesia",
+        "url": "/poesia"
       }
     ]
   },
@@ -31,11 +39,15 @@
   },
  
   {
-    "titulo": "Prueba",
+    "titulo": "muestra",
     "opciones": [
       {
         "service": "Iterpolacion lineal",
         "url": "/prueba"
+      },
+      {
+        "service": "Ensayos generados",
+        "url": "/generados"
       }
     ]
   }

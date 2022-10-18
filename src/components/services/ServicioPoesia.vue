@@ -4,26 +4,25 @@
       <div v-if="!loading">
         <div class="texto">
           <h2>
-            En esta opción podrás realizar copias para tus publicaciones de
-            manera acertiva y efectiva. Por favor, introduce la frase clave que
-            creas necesaria para realizar el copy de tu agrado.
+            En esta opción podrás realizar poesía
+            Por favor, introduce el tema de la poesia a generar
           </h2>
         </div>
         <div class="contenedor-service">
           <div class="contenedor__form">
-            <h2>Ingresa la frase clave para generar el titulo</h2>
+            <h2>Ingresa la frase clave para generar la poesia</h2>
             <br />
             <div class="grupo">
               <input
                 type="text"
                 v-model="texto"
-                placeholder="ejemplo: inteligencia artificial para tus copys"
+                placeholder="ejemplo: amor a distancia"
               /><span class="barra"></span>
               <label>ingreso del texto</label>
             </div>
             <br />
             <h1>{{ resultado }}</h1>
-            <button type="submit" @click="publicacion">consultar</button>
+            <button type="submit" @click="poesia">consultar</button>
           </div>
         </div>
       </div>
@@ -46,10 +45,10 @@ let texto = ref("");
 const resultado = ref(null);
 let loading = ref(false);
 
-async function publicacion() {
+async function poesia() {
   loading.value = true;
   let post = ref({
-    tipo: "publicacion",
+    tipo: "poesia",
     contenido: texto.value,
   });
   const response = await postPost(post.value);

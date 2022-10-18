@@ -1,14 +1,9 @@
 <template>
-  <HeaderFinal />
+  <MainNavar/>
   <ComponentePublicacion />
-  <FooterPrincipal />
 </template>
 
-<script>
+<script setup>
+import MainNavar from "@/components/MainNavar.vue";
 import ComponentePublicacion from "@/components/services/ServicioPublicaciones.vue";
-export default {
-  components: {
-    ComponentePublicacion,
-  },
-};
 </script>

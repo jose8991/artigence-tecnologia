@@ -1,14 +1,10 @@
 <template>
-  <HeaderFinal />
+  <MainNavar />
   <componenteListas />
-  <FooterPrincipal />
 </template>
 
-<script>
+<script setup>
+import MainNavar from "@/components/MainNavar.vue";
 import componenteListas from "@/components/services/ServicioListas.vue";
-export default {
-  components: {
-    componenteListas,
-  },
-};
+
 </script>

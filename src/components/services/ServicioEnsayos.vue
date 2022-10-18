@@ -4,26 +4,25 @@
       <div v-if="!loading">
         <div class="texto">
           <h2>
-            En esta opción podrás realizar copias para tus publicaciones de
-            manera acertiva y efectiva. Por favor, introduce la frase clave que
-            creas necesaria para realizar el copy de tu agrado.
+            En esta opción podrás realizar ensayos ,<br>
+            escribe el tema sobre el cual quiere hacer el ensayo
           </h2>
         </div>
         <div class="contenedor-service">
           <div class="contenedor__form">
-            <h2>Ingresa la frase clave para generar el titulo</h2>
+            <h2>Ingresa el tema del ensayo a realizar</h2>
             <br />
             <div class="grupo">
               <input
                 type="text"
                 v-model="texto"
-                placeholder="ejemplo: inteligencia artificial para tus copys"
+                placeholder="Ejemplo:beneficios de la ia"
               /><span class="barra"></span>
               <label>ingreso del texto</label>
             </div>
             <br />
             <h1>{{ resultado }}</h1>
-            <button type="submit" @click="publicacion">consultar</button>
+            <button type="submit" @click="ensayo">consultar</button>
           </div>
         </div>
       </div>
@@ -46,10 +45,10 @@ let texto = ref("");
 const resultado = ref(null);
 let loading = ref(false);
 
-async function publicacion() {
+async function ensayo() {
   loading.value = true;
   let post = ref({
-    tipo: "publicacion",
+    tipo: "ensayo",
     contenido: texto.value,
   });
   const response = await postPost(post.value);

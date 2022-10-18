@@ -27,7 +27,7 @@
 import { ref } from "vue";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "vue-router";
-
+import swal from 'sweetalert';
 const router = useRouter();
 const email_login = ref("");
 const password_login = ref("");
@@ -43,6 +43,16 @@ const login = () => {
     })
     .catch((error) => {
       console.log(error.code);
+      console.log("dfgndfjksla,ñsdkfdsa,lñdfjkl");
+      swal({
+        title: "Are you sure?",
+        text: "Are you sure that you want to leave this page?",
+        icon: "warning"}),
+        setTimeout(() => {
+          router.push("/");
+        }, 2000);
+        
+ 
       switch (error.code) {
         case "auth/invalid-email":
           errMgs.value = "email invalido";
@@ -51,6 +61,7 @@ const login = () => {
           errMgs.value = "usuario no encontrado";
           break;
         case "auth/wrong-password":
+          console.log("entrooooooooooooooooooooooo");
           errMgs.value = "contraseña incorrecta";
           break;
         default:
