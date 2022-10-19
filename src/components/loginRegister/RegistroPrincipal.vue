@@ -23,7 +23,7 @@
           <i></i>
         </div>
         <div class="links">
-          <a href="/ingresar">Iniciar secccion</a>
+          <a href="/ingresar">Iniciar sesion</a>
         </div>
         <input type="submit" @click="register" value="Ingresar" />
       </div>

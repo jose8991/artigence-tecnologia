@@ -47,8 +47,10 @@
       title="ingresar"
       link="/ingresar"
       class="lerpw--font-size--i-1000px--18px--f-450px--12px--ends"
+      v-if="!isLoggedIn"
     />
-    <button @click="handleSignOut" v-if="isLoggedIn">cerrar seccion</button>
+    <button @click="handleSignOut" v-if="isLoggedIn"
+    class="lerpw--font-size--i-1000px--18px--f-450px--12px--ends">cerrar sesion</button>
     <h1 class="borrar">{{ userLogeado }}</h1>
   </nav>
 </template>
@@ -243,7 +245,21 @@ nav {
   }
 }
 
+button {
+  background: var(--gradient);
+  padding: 5px 9px;
+  color: var(--main-text-color);
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px -5px #20202049;
+  cursor: pointer;
+  transition: box-shadow 500ms;
+}
 @media (max-width: 1000px) {
+
+  
   img {
     height: 25px;
   }
