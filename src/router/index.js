@@ -12,7 +12,7 @@ import interpolacionLineal from "../views/interpolacionLineal.vue";
 import ContactMain from "../views/ContactMain.vue";
 import textosEjemplos from "../views/textosEjemplos.vue";
 import { getAuth } from "firebase/auth";
-
+import swal from 'sweetalert';
 const routes = [
   {
     path: "/",
@@ -54,6 +54,9 @@ const routes = [
     path: "/ensayos",
     name: "ensayos",
     component: ServicioEnsayos,
+    meta: {
+      requiresAuth: true,
+    },
   },
   {
     path: "/poesia",
@@ -88,8 +91,16 @@ router.beforeEach((to, from, next) => {
   const auth = getAuth();
   const usuario = auth.currentUser;
   if (rutaProtegida === true && usuario === null) {
-    alert("Para acceder a este servicios debes iniciar seccion");
-    next({ name: "registrarse" });
+    swal({
+      title: 'Para este servicio debes iniciar sesión',
+      text: 'si no te has registrado, puedes hacerlo en el botón de registrarse',
+      icon: 'warning',
+    }),
+      setTimeout(() => {
+        next({ name: "ingresar" });
+        swal.close();
+      }, 2000);
+    
   } else {
     next();
   }

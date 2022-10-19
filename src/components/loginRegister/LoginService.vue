@@ -37,6 +37,16 @@ const errMgs = ref("");
 const login = () => {
   signInWithEmailAndPassword(getAuth(), email_login.value, password_login.value)
     .then((userCredential) => {
+      swal({
+        title: 'Inicio correctamente',
+        text: 'Ahora puedes iniciar sesión',
+        icon: 'success',
+      }),
+        setTimeout(() => {
+          router.push("/");
+          swal.close();
+        }, 2000);
+
       console.log(userCredential);
       console.log("usuario registrado");
       router.push("/");
@@ -44,17 +54,20 @@ const login = () => {
     .catch((error) => {
       console.log(error.code);
       console.log("dfgndfjksla,ñsdkfdsa,lñdfjkl");
-      swal({
-        title: "Are you sure?",
-        text: "Are you sure that you want to leave this page?",
-        icon: "warning"}),
-        setTimeout(() => {
-          router.push("/");
-        }, 2000);
+
         
  
       switch (error.code) {
         case "auth/invalid-email":
+        swal({
+        title: "correo invalido",
+        text: "verifica el correo ingresado",
+        icon: "warning"
+      }),
+        // setTimeout(() => {
+        //   router.push("/");
+        //   swal.close();
+        // }, 2000);
           errMgs.value = "email invalido";
           break;
         case "auth/user-not-found":
