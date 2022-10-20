@@ -21,6 +21,10 @@
       {
         "service": "Poesia",
         "url": "/poesia"
+      },
+      {
+        "service": "Cuentos",
+        "url": "/cuentos"
       }
     ]
   },

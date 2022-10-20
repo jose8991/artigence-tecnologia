@@ -4,6 +4,7 @@ import ServicioHistorias from "../views/services/ServicioHistoria.vue";
 import ServicioLista from "../views/services/ServicioLista.vue";
 import ServicioEnsayos from "../views/services/ServicioEnsayos.vue";
 import ServicioPoesia from "../views/services/ServicioPoesia.vue";
+import ServicioCuentos from "../views/services/ServicioCuentos.vue";
 import MissionVision from "../views/MissionVision.vue";
 import loginPrincipal from "../views/RegisterLogin/LoginView.vue";
 import registerPrincipal from "../views/RegisterLogin/RegisterView.vue";
@@ -49,6 +50,11 @@ const routes = [
     path: "/publicaciones",
     name: "publicaciones",
     component: ServicioPublicacion,
+  },
+  {
+    path: "/cuentos",
+    name: "cuentos",
+    component: ServicioCuentos,
   },
   {
     path: "/ensayos",
