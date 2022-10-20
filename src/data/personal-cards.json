@@ -1,0 +1,18 @@
+[
+    {
+        "img":"https://i.ibb.co/jfPpVPN/jose.jpg",
+        "title":"Jose Luis Giraldo Morales",
+        "ocupation":"Desarrollador FullStack",
+        "linkedin":"https://www.linkedin.com/in/jose-luis-giraldo-morales/",
+        "whatsapp":"https://wa.link/k3umo2",
+        "github":"https://github.com/jose8991"
+    },
+    {
+        "img":"https://i.ibb.co/dm9HN1s/anyi1.jpg",
+        "title":"Anyi Marcela Hernandez Gallego", 
+        "ocupation":"Desarrolladora FrontEnd",
+        "linkedin":"https://www.linkedin.com/in/anyihernandezg/",
+        "whatsapp":"https://wa.link/m0c8sp",
+        "github":"https://github.com/AnyiHernandez"
+    }
+]

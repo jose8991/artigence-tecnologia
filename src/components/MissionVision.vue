@@ -4,7 +4,6 @@
       <div class="left-column background1-left-column">
         <h6>Acerca de Nosotros</h6>
         <h2>Misión</h2>
-        <!--<i class="fa fa-github"></i>-->
       </div>
 
       <div class="right-column">
