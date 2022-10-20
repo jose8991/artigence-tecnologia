@@ -1,7 +1,9 @@
 <template>
     <div class="main">
      <MainNavar/>
-    <contactus/>
+    <div style="text-align: center;">
+        <contactus/>
+    </div>
 </div>
 </template>
 

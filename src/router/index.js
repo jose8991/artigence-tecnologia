@@ -34,7 +34,7 @@ const routes = [
     component: ContactMain,
   },
   {
-    path: "/historia",
+    path: "/mision-vision",
     component: MissionVision,
   },
   {
