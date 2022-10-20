@@ -23,6 +23,19 @@
         "url": "/poesia"
       }
     ]
+  },
+  {
+    "titulo": "Nosotros",
+    "opciones": [
+      {
+        "service": "Mision y vision",
+        "url": "/historia"
+      },
+      {
+        "service": "Contactenos",
+        "url": "/contactenos"
+      }
+    ]
   }
 
 ]

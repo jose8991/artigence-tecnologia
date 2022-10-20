@@ -6,7 +6,7 @@ import  "@/components/modules/responsive-lerpw-css.js";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import i18n from './i18n'
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -28,4 +28,4 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 console.log(analytics);
 
-createApp(App).use(i18n).use(router).mount('#app')
+createApp(App).use(router).mount('#app')
